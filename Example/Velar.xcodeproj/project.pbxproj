@@ -9,6 +9,28 @@
 /* Begin PBXBuildFile section */
 		204542E6209359A600ED56E6 /* DefaultBackgroundOverlayDesigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542E5209359A600ED56E6 /* DefaultBackgroundOverlayDesigner.swift */; };
 		204542E820935A7A00ED56E6 /* ImagePopOverDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542E720935A7A00ED56E6 /* ImagePopOverDelegate.swift */; };
+		2045431C209366DD00ED56E6 /* FakeClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F4209366A600ED56E6 /* FakeClosure.swift */; };
+		2045431D209366DD00ED56E6 /* FakeViewVerticalMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F5209366A600ED56E6 /* FakeViewVerticalMover.swift */; };
+		2045431E209366DD00ED56E6 /* FakeAlphaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F6209366A600ED56E6 /* FakeAlphaAnimator.swift */; };
+		2045431F209366DD00ED56E6 /* FakeCenterAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F7209366A600ED56E6 /* FakeCenterAdjuster.swift */; };
+		20454320209366DD00ED56E6 /* FakeConstraintAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F8209366A600ED56E6 /* FakeConstraintAnimator.swift */; };
+		20454321209366DD00ED56E6 /* FakeViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F9209366A600ED56E6 /* FakeViewAnimator.swift */; };
+		20454322209366DD00ED56E6 /* FakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542FA209366A600ED56E6 /* FakeView.swift */; };
+		20454323209366DD00ED56E6 /* FakeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542FB209366A600ED56E6 /* FakeViewPresenter.swift */; };
+		20454324209366DD00ED56E6 /* FakeViewConstraintGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542FC209366A600ED56E6 /* FakeViewConstraintGenerator.swift */; };
+		20454325209366E100ED56E6 /* ViewVerticalMoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542FE209366A600ED56E6 /* ViewVerticalMoverTests.swift */; };
+		20454326209366E100ED56E6 /* ViewConstraintGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542FF209366A600ED56E6 /* ViewConstraintGeneratorTests.swift */; };
+		20454327209366E100ED56E6 /* ModalViewDismisserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454300209366A600ED56E6 /* ModalViewDismisserTests.swift */; };
+		20454328209366E100ED56E6 /* CenterAdjusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454301209366A600ED56E6 /* CenterAdjusterTests.swift */; };
+		20454329209366E100ED56E6 /* ConstraintAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454302209366A600ED56E6 /* ConstraintAnimatorTests.swift */; };
+		2045432A209366E100ED56E6 /* ViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454303209366A600ED56E6 /* ViewPresenterTests.swift */; };
+		2045432B209366E100ED56E6 /* VerticalCenterMoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454304209366A600ED56E6 /* VerticalCenterMoverTests.swift */; };
+		2045432C209366E100ED56E6 /* PanGestureAdderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454305209366A600ED56E6 /* PanGestureAdderTests.swift */; };
+		2045432D209366E100ED56E6 /* AlphaAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454306209366A600ED56E6 /* AlphaAnimatorTests.swift */; };
+		2045432E209366E400ED56E6 /* BackgroundOverlayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F2209366A600ED56E6 /* BackgroundOverlayViewTests.swift */; };
+		2045432F209366E700ED56E6 /* ModalViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542EE209366A600ED56E6 /* ModalViewPresenterTests.swift */; };
+		20454330209366E700ED56E6 /* BaseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204542F0209366A600ED56E6 /* BaseViewTests.swift */; };
+		204543332093680C00ED56E6 /* FakeOverlayDesigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20454331209367FA00ED56E6 /* FakeOverlayDesigner.swift */; };
 		20D03390209356AD0033D933 /* ImagePopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0338A209356AD0033D933 /* ImagePopOverView.swift */; };
 		20D03391209356AD0033D933 /* ImagePopOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D0338B209356AD0033D933 /* ImagePopOverView.xib */; };
 		20D03392209356AD0033D933 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D0338D209356AD0033D933 /* TestView.xib */; };
@@ -19,7 +41,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		CE8B7BB745C245EC3D182C0A /* Pods_Velar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE1AF989DCB9612398CCA28 /* Pods_Velar_Example.framework */; };
 		F97E2A5E7B6B331D90686A85 /* Pods_Velar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B93A5848BF8DCC5C2EA43F /* Pods_Velar_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +58,28 @@
 /* Begin PBXFileReference section */
 		204542E5209359A600ED56E6 /* DefaultBackgroundOverlayDesigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultBackgroundOverlayDesigner.swift; sourceTree = "<group>"; };
 		204542E720935A7A00ED56E6 /* ImagePopOverDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePopOverDelegate.swift; sourceTree = "<group>"; };
+		204542EE209366A600ED56E6 /* ModalViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewPresenterTests.swift; sourceTree = "<group>"; };
+		204542F0209366A600ED56E6 /* BaseViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewTests.swift; sourceTree = "<group>"; };
+		204542F2209366A600ED56E6 /* BackgroundOverlayViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundOverlayViewTests.swift; sourceTree = "<group>"; };
+		204542F4209366A600ED56E6 /* FakeClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeClosure.swift; sourceTree = "<group>"; };
+		204542F5209366A600ED56E6 /* FakeViewVerticalMover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewVerticalMover.swift; sourceTree = "<group>"; };
+		204542F6209366A600ED56E6 /* FakeAlphaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeAlphaAnimator.swift; sourceTree = "<group>"; };
+		204542F7209366A600ED56E6 /* FakeCenterAdjuster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCenterAdjuster.swift; sourceTree = "<group>"; };
+		204542F8209366A600ED56E6 /* FakeConstraintAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeConstraintAnimator.swift; sourceTree = "<group>"; };
+		204542F9209366A600ED56E6 /* FakeViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewAnimator.swift; sourceTree = "<group>"; };
+		204542FA209366A600ED56E6 /* FakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeView.swift; sourceTree = "<group>"; };
+		204542FB209366A600ED56E6 /* FakeViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewPresenter.swift; sourceTree = "<group>"; };
+		204542FC209366A600ED56E6 /* FakeViewConstraintGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewConstraintGenerator.swift; sourceTree = "<group>"; };
+		204542FE209366A600ED56E6 /* ViewVerticalMoverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewVerticalMoverTests.swift; sourceTree = "<group>"; };
+		204542FF209366A600ED56E6 /* ViewConstraintGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConstraintGeneratorTests.swift; sourceTree = "<group>"; };
+		20454300209366A600ED56E6 /* ModalViewDismisserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewDismisserTests.swift; sourceTree = "<group>"; };
+		20454301209366A600ED56E6 /* CenterAdjusterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterAdjusterTests.swift; sourceTree = "<group>"; };
+		20454302209366A600ED56E6 /* ConstraintAnimatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAnimatorTests.swift; sourceTree = "<group>"; };
+		20454303209366A600ED56E6 /* ViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenterTests.swift; sourceTree = "<group>"; };
+		20454304209366A600ED56E6 /* VerticalCenterMoverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalCenterMoverTests.swift; sourceTree = "<group>"; };
+		20454305209366A600ED56E6 /* PanGestureAdderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureAdderTests.swift; sourceTree = "<group>"; };
+		20454306209366A600ED56E6 /* AlphaAnimatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAnimatorTests.swift; sourceTree = "<group>"; };
+		20454331209367FA00ED56E6 /* FakeOverlayDesigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeOverlayDesigner.swift; sourceTree = "<group>"; };
 		20D0338A209356AD0033D933 /* ImagePopOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePopOverView.swift; sourceTree = "<group>"; };
 		20D0338B209356AD0033D933 /* ImagePopOverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePopOverView.xib; sourceTree = "<group>"; };
 		20D0338D209356AD0033D933 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
@@ -54,7 +97,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Velar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Velar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		76F61782E3C7A0559EE30678 /* Pods-Velar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Velar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Velar_Example/Pods-Velar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8E11A9C5B0F8DACB54C9CE22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B1B93A5848BF8DCC5C2EA43F /* Pods_Velar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Velar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +142,73 @@
 				204542E5209359A600ED56E6 /* DefaultBackgroundOverlayDesigner.swift */,
 			);
 			path = Designers;
+			sourceTree = "<group>";
+		};
+		204542EC209366A600ED56E6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				204542ED209366A600ED56E6 /* ModalView */,
+				204542EF209366A600ED56E6 /* BaseView */,
+				204542F1209366A600ED56E6 /* BackgroundOverlayView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		204542ED209366A600ED56E6 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				204542EE209366A600ED56E6 /* ModalViewPresenterTests.swift */,
+			);
+			path = ModalView;
+			sourceTree = "<group>";
+		};
+		204542EF209366A600ED56E6 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				204542F0209366A600ED56E6 /* BaseViewTests.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		204542F1209366A600ED56E6 /* BackgroundOverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				204542F2209366A600ED56E6 /* BackgroundOverlayViewTests.swift */,
+			);
+			path = BackgroundOverlayView;
+			sourceTree = "<group>";
+		};
+		204542F3209366A600ED56E6 /* Mock Classes */ = {
+			isa = PBXGroup;
+			children = (
+				204542F4209366A600ED56E6 /* FakeClosure.swift */,
+				204542F5209366A600ED56E6 /* FakeViewVerticalMover.swift */,
+				204542F6209366A600ED56E6 /* FakeAlphaAnimator.swift */,
+				204542F7209366A600ED56E6 /* FakeCenterAdjuster.swift */,
+				204542F8209366A600ED56E6 /* FakeConstraintAnimator.swift */,
+				204542F9209366A600ED56E6 /* FakeViewAnimator.swift */,
+				204542FA209366A600ED56E6 /* FakeView.swift */,
+				204542FB209366A600ED56E6 /* FakeViewPresenter.swift */,
+				204542FC209366A600ED56E6 /* FakeViewConstraintGenerator.swift */,
+				20454331209367FA00ED56E6 /* FakeOverlayDesigner.swift */,
+			);
+			path = "Mock Classes";
+			sourceTree = "<group>";
+		};
+		204542FD209366A600ED56E6 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				204542FE209366A600ED56E6 /* ViewVerticalMoverTests.swift */,
+				204542FF209366A600ED56E6 /* ViewConstraintGeneratorTests.swift */,
+				20454300209366A600ED56E6 /* ModalViewDismisserTests.swift */,
+				20454301209366A600ED56E6 /* CenterAdjusterTests.swift */,
+				20454302209366A600ED56E6 /* ConstraintAnimatorTests.swift */,
+				20454303209366A600ED56E6 /* ViewPresenterTests.swift */,
+				20454304209366A600ED56E6 /* VerticalCenterMoverTests.swift */,
+				20454305209366A600ED56E6 /* PanGestureAdderTests.swift */,
+				20454306209366A600ED56E6 /* AlphaAnimatorTests.swift */,
+			);
+			path = "Helper Classes";
 			sourceTree = "<group>";
 		};
 		20D03388209356AD0033D933 /* Templates */ = {
@@ -187,7 +296,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				204542EC209366A600ED56E6 /* Features */,
+				204542FD209366A600ED56E6 /* Helper Classes */,
+				204542F3209366A600ED56E6 /* Mock Classes */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -447,7 +558,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				2045432B209366E100ED56E6 /* VerticalCenterMoverTests.swift in Sources */,
+				20454321209366DD00ED56E6 /* FakeViewAnimator.swift in Sources */,
+				20454330209366E700ED56E6 /* BaseViewTests.swift in Sources */,
+				2045432A209366E100ED56E6 /* ViewPresenterTests.swift in Sources */,
+				20454322209366DD00ED56E6 /* FakeView.swift in Sources */,
+				20454325209366E100ED56E6 /* ViewVerticalMoverTests.swift in Sources */,
+				204543332093680C00ED56E6 /* FakeOverlayDesigner.swift in Sources */,
+				2045432D209366E100ED56E6 /* AlphaAnimatorTests.swift in Sources */,
+				20454329209366E100ED56E6 /* ConstraintAnimatorTests.swift in Sources */,
+				20454328209366E100ED56E6 /* CenterAdjusterTests.swift in Sources */,
+				20454326209366E100ED56E6 /* ViewConstraintGeneratorTests.swift in Sources */,
+				2045432C209366E100ED56E6 /* PanGestureAdderTests.swift in Sources */,
+				20454320209366DD00ED56E6 /* FakeConstraintAnimator.swift in Sources */,
+				2045432F209366E700ED56E6 /* ModalViewPresenterTests.swift in Sources */,
+				2045431C209366DD00ED56E6 /* FakeClosure.swift in Sources */,
+				20454323209366DD00ED56E6 /* FakeViewPresenter.swift in Sources */,
+				2045431F209366DD00ED56E6 /* FakeCenterAdjuster.swift in Sources */,
+				2045431D209366DD00ED56E6 /* FakeViewVerticalMover.swift in Sources */,
+				2045431E209366DD00ED56E6 /* FakeAlphaAnimator.swift in Sources */,
+				20454327209366E100ED56E6 /* ModalViewDismisserTests.swift in Sources */,
+				2045432E209366E400ED56E6 /* BackgroundOverlayViewTests.swift in Sources */,
+				20454324209366DD00ED56E6 /* FakeViewConstraintGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +760,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Velar_Example.app/Velar_Example";
 			};
 			name = Debug;
 		};
@@ -645,6 +778,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Velar_Example.app/Velar_Example";
 			};
 			name = Release;
 		};

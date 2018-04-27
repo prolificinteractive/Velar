@@ -1,3 +1,4 @@
+platform :ios, '8.0'
 use_frameworks!
 
 target 'Velar_Example' do
@@ -5,7 +6,5 @@ target 'Velar_Example' do
 
   target 'Velar_Tests' do
     inherit! :search_paths
-
-    
   end
 end

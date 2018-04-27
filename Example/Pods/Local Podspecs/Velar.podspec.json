@@ -1,9 +1,9 @@
 {
   "name": "Velar",
   "version": "0.1.0",
-  "summary": "A short description of Velar.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Jonathan Samudio/Velar",
+  "summary": "A custom alert view presenter.",
+  "description": "Velar can present a custom view with a swipeable dismiss gesture.",
+  "homepage": "https://github.com/prolificinteractive/Velar",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Jonathan Samudio": "jonathan2457@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Jonathan Samudio/Velar.git",
+    "git": "https://github.com/prolificinteractive/Velar.git",
     "tag": "0.1.0"
   },
   "platforms": {
