@@ -26,7 +26,7 @@ pod 'Velar'
 ```
 ## Usage
 
-### Create Designer 
+### Create the Designer 
 
 ```
 final class DefaultBackgroundOverlayDesigner: BackgroundOverlayDesignable {
