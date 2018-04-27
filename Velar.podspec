@@ -9,34 +9,19 @@
 Pod::Spec.new do |s|
   s.name             = 'Velar'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Velar.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A custom alert view presenter.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Velar can present a custom view with a swipeable dismiss gesture.
                        DESC
 
-  s.homepage         = 'https://github.com/Jonathan Samudio/Velar'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/prolificinteractive/Velar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jonathan Samudio' => 'jonathan2457@gmail.com' }
-  s.source           = { :git => 'https://github.com/Jonathan Samudio/Velar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/prolificinteractive/Velar.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Velar/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Velar' => ['Velar/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
