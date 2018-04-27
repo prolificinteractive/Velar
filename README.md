@@ -9,6 +9,8 @@
 
 Velar can present a custom view with a swipeable dismiss gesture.
 
+![Velar.gif](Images/Velar.gif)
+
 ## Requirements
 
 * iOS 8.0+
