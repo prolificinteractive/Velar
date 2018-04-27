@@ -26,6 +26,49 @@ pod 'Velar'
 ```
 ## Usage
 
+### Create Designer 
+
+```
+final class DefaultBackgroundOverlayDesigner: BackgroundOverlayDesignable {
+
+    var dismissLabelText: String {
+        return "Release to Dismiss!"
+    }
+
+    var hideDismissLabel: Bool {
+        return false
+    }
+
+    var dismissLabelColor: UIColor {
+        return UIColor.white
+    }
+
+    var backgroundColor: UIColor {
+        return UIColor.black.withAlphaComponent(0.4)
+    }
+}
+```
+
+### Build the Modal View Presenter
+
+```
+private lazy var velarPresenter: VelarPresenter = {
+    return VelarPresenterBuilder.build(designer: DefaultBackgroundOverlayDesigner())
+}()
+```
+
+### Show the Alert 
+
+```
+velarPresenter.show(view: imagePopOverView, animate: true)
+```
+
+### Hide the Alert
+
+```
+velarPresenter.hide(animate: true)
+```
+
 
 ## Contributing to Velar
 

@@ -1,5 +1,5 @@
 //
-//  ModalView.swift
+//  VelarPresenter.swift
 //  Velar
 //
 //  Created by Jonathan Samudio on 1/23/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class ModalViewPresenter {
+public class VelarPresenter {
     
     /// Dismiss label threshold.
     public var dismissThreshold: CGFloat = 100 {
@@ -77,12 +77,12 @@ public class ModalViewPresenter {
         backgroundOverlayView.showDismissLabel(show: baseView.modalViewDismisser.canDismiss, animate: false)
     }
     
-    /// Shows the modal view.
+    /// Shows the view.
     ///
     /// - Parameters:
     ///   - view: Custom view to present.
     ///   - animate: Flag to animate the view.
-    public func showModal(view: UIView, animate: Bool) {
+    public func show(view: UIView, animate: Bool) {
         viewConstraintGenerator.constraint(subView: backgroundOverlayView, top: 0, leading: 0, bottom: 0, trailing: 0)
         viewConstraintGenerator.constraint(subView: baseView, top: 0, leading: 0, bottom: 0, trailing: 0)
 
@@ -91,10 +91,10 @@ public class ModalViewPresenter {
         alphaAnimator.transitionAlpha(show: true, view: backgroundOverlayView, animated: animate, completion: nil)
     }
     
-    /// Hides the modal view.
+    /// Hides the view.
     ///
     /// - Parameter animate: Flag to animate the view.
-    public func hideModal(animate: Bool) {
+    public func hide(animate: Bool) {
         alphaAnimator.transitionAlpha(show: false, view: backgroundOverlayView, animated: animate) { [weak self] in ()
             self?.backgroundOverlayView.showDismissLabel(show: false, animate: false)
             self?.backgroundOverlayView.removeFromSuperview()
@@ -107,7 +107,7 @@ public class ModalViewPresenter {
     }
 }
 
-extension ModalViewPresenter: PanGestureAdderDelegate {
+extension VelarPresenter: PanGestureAdderDelegate {
     
     func panBegan(recognizer: UIPanGestureRecognizer) {
         let fingerCenter = recognizer.location(in: recognizer.view?.superview)
@@ -124,7 +124,7 @@ extension ModalViewPresenter: PanGestureAdderDelegate {
     
     func panEnded(recognizer: UIPanGestureRecognizer) {
         guard baseView.modalViewDismisser.canDismiss == false else {
-            hideModal(animate: true)
+            hide(animate: true)
             return
         }
         verticalCenterMover.returnToCenter(view: baseView.modalView, center: baseView.center, animate: true)
@@ -132,10 +132,10 @@ extension ModalViewPresenter: PanGestureAdderDelegate {
     }
 }
 
-private extension ModalViewPresenter {
+private extension VelarPresenter {
 
     @objc func backgroundViewSelected() {
-        hideModal(animate: true)
+        hide(animate: true)
     }
 }
 

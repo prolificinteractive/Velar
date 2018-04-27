@@ -7,44 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0200D4AFE0753E0271C9A46EB5609F95 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A51C5ABA1A89C3AFCE123ACC79780B /* BaseView.swift */; };
-		034FBAD7B30036D941312F23E7E17D7A /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F63C39F4F418B9A6A3C0018300F0AE /* Presentable.swift */; };
-		06BFD84226E52654C30B915B3614A42F /* AlphaAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6B52357BB09759716800C89B78523 /* AlphaAnimatable.swift */; };
-		157B22293F8D85866584E27B706703B1 /* VerticalCenterMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2358984FB5A2135C2FBE32E35A245CF /* VerticalCenterMover.swift */; };
-		1B1F926AD23BF4E31A1487E8341A5971 /* CenterMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE525CC49206B7BCB91F844C81BD10C /* CenterMovable.swift */; };
-		1FC7919E559BA1DBACC3EEEA0ACD5BF6 /* ConstraintGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181FDECC7318DB5C228BAE2EB11BA80 /* ConstraintGenerator.swift */; };
-		2C247213A443097A4246D78E5720E604 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29FD18099A59893D483B72BB40B3226 /* UIViewExtension.swift */; };
-		330D5F2C4660136ADF2F2A265019908B /* ConstraintAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52D4F4C43CD03BA200455A9AC30728 /* ConstraintAnimatable.swift */; };
-		42EE16E83C19FA00A26AC273B62C3982 /* BackgroundOverlayView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4067A001D86B7526CED5C32FF2F14B34 /* BackgroundOverlayView.xib */; };
-		4304CDD3220EACD1FF76F8CF15FCE766 /* PanGestureAdderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A55F4EE64098B2D328838A745FCF67 /* PanGestureAdderDelegate.swift */; };
+		06BDFF68DA7714822EDB453D1ED4B835 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2D95C5FB72BF384847352E2D14AC05 /* UIViewExtension.swift */; };
+		3D83E562C80999EBD22CC0993D4C5F1B /* ModalViewDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB488B641388C946410F1686C0859A /* ModalViewDismisser.swift */; };
+		42ECE4040C69963D1F084DE0B4A6BC5E /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5FE1D13E8C353B22AA5A727193AEF /* ViewAnimator.swift */; };
+		4AFDEAC8975C46479210A2A48671E71C /* Velar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211809D27A01EA5868CBBE246652BCE /* Velar-dummy.m */; };
 		4B011916BB6A6C3445502955B54E8724 /* Pods-Velar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1FB542AF8E9FAA7AE96A77A2AE6613 /* Pods-Velar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		525453F701A8DE040625DA83BAEEC7ED /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10886731FAAB25FC8113F0168DC6A91 /* ModalView.swift */; };
+		514A7A634C7D08783C22988F086AFDFB /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11A79C31E9FFC7A6B5A8251D82C1CBB /* ViewPresenter.swift */; };
 		574789361D545F361E7A652D698F77A4 /* Pods-Velar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8668777DA81C990EF1BCF66C9E7C6D /* Pods-Velar_Tests-dummy.m */; };
-		58698DFC650587EA27BB9B52F48479E0 /* Velar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10457CAEB1EC24048578C2EF135C87AF /* Velar-dummy.m */; };
-		5D38FFF56D2EC8AFDFA32C27A902FCB6 /* BaseView.xib in Sources */ = {isa = PBXBuildFile; fileRef = D3E7919067770D3659E97BA141362CBE /* BaseView.xib */; };
-		65C2908C5CF260D5787F2E9B9381AFCE /* Velar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF12DE84C8C2585A74D0638B35F5E221 /* Velar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58DEB7C05EB48CBF944707358B1C7594 /* AlphaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2F64FDF193A6CD2928A9AD05DCD47F /* AlphaAnimator.swift */; };
+		5FA9874CA85CD988A0FAD0DBDD45CCE0 /* BaseView.xib in Sources */ = {isa = PBXBuildFile; fileRef = A12C1F6EEA7D789ED7C0A0BA3716004D /* BaseView.xib */; };
+		60D0D02D6C0A541D05C9E5F06E03E463 /* PanGestureAdderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F723C282C5ECB6BAFF26757F25EFD4 /* PanGestureAdderDelegate.swift */; };
+		61EE007538FB1B4360BAB61FB34829E1 /* PanGestureAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B2B9E871B4CB7BF10F5731232E412 /* PanGestureAdder.swift */; };
+		65C2908C5CF260D5787F2E9B9381AFCE /* Velar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0D275EC31D71A98B74F98A14C36D8C6 /* Velar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ABEDD03767D175BC6A4B067D206D171 /* BackgroundOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3CA7D6957FD1CBDB2C7E3623002E2 /* BackgroundOverlayView.swift */; };
 		71247310E314531B567564FFE4C4BABA /* Pods-Velar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE56CC98717BBB7FC10183D23B40CC4 /* Pods-Velar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71B04B175F002D922D7F6A218A5519E8 /* CenterAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402B6E1F4401B2005CCB4B33915CA42 /* CenterAdjustable.swift */; };
-		72195F8287B53BA2ED54A9325DC24E2E /* BackgroundOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1061F90D2AC7D9F68DCFEA47CF5FB1 /* BackgroundOverlayView.swift */; };
-		76F8FD708D56EC9AE31D821ABC426976 /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C1E6BE64987B13F843B69173226D8 /* Dismissable.swift */; };
+		76305F9F7451FF164118FF20699A5157 /* VerticalCenterMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B0F99FD681DF6021BE8FC60F8368AC /* VerticalCenterMover.swift */; };
+		7694C6AB0D1207654897D4D83B94BA8C /* GestureAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB1E59069A270799B76358B5EB283 /* GestureAdder.swift */; };
 		783C44F08A567AA8D1F0AE6E2B0BD378 /* Pods-Velar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF8FA8B7247599E9F68EA86EC91A80 /* Pods-Velar_Example-dummy.m */; };
+		7BA9EDA6675A1B622E290A1AB9D391C4 /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E551A72B2594DB351D55502C2E6E21E9 /* Dismissable.swift */; };
+		7CC8D6E3890D5F2315458B5A993B9498 /* ConstraintGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85062B79B84F4FCD00E1477183CAA2 /* ConstraintGenerator.swift */; };
 		87FD219D70E41DF99C57AC2374E92660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8B2D8356166BCF54BB7E2EB23E8F0C04 /* PanGestureAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF664A70333891B1092EB0112D30FB7 /* PanGestureAdder.swift */; };
+		88B7D9887F0ABC52A8CDD3EE9CAB1B92 /* BackgroundOverlayView.xib in Sources */ = {isa = PBXBuildFile; fileRef = ED2A912A9F2D683EF2292C70FBE31995 /* BackgroundOverlayView.xib */; };
+		93A205DC4E524085BA056EFEEBE19A29 /* ViewConstraintGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46617BA6821B1A645E26BD10E9B52EB /* ViewConstraintGenerator.swift */; };
 		94E3BC1513E6BF06D4A540B9C8930EFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9DD0E6E3D9D496A6EEEE17FB505594E2 /* ModelViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD8CF6CDA24B72147877D88B7D05B5 /* ModelViewBuilder.swift */; };
-		A5DDE85960C7ED916E3C971FC7C941DD /* CenterAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52A007E2E08F955A9AD68E21E7CAD03 /* CenterAdjuster.swift */; };
-		AADFCA5C5115788635D5B0C5893ED5A1 /* ConstraintAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B527F0574E35345B56008256E4295 /* ConstraintAnimator.swift */; };
-		B4A6515669E6F21E6D70FCF2D2680F7E /* ViewAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85566642E52CC589DFED812FCE02228C /* ViewAnimatable.swift */; };
-		BE875C377C03AE85A9E8588D18093402 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D34B4AF5F44FA1F1C99E3B34CECC0 /* ViewAnimator.swift */; };
-		C72D7320ED6318B8559F93227D50D040 /* ViewConstraintGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7BF89166CF634264234393B8EB7A5 /* ViewConstraintGenerator.swift */; };
-		CAB7267E9AFA78007FD52986C652252F /* GestureAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00CFFBECFE1D202945E9EF6150200C /* GestureAdder.swift */; };
-		DFBC436E7907D8F6F6379E5ED8392DF1 /* AlphaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE9E502952BD37363B24DA21A4B2DB /* AlphaAnimator.swift */; };
-		E4E8023D412CBDD9534BCE610A44C72C /* ViewVerticalMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB46000E4BBD1B9AE708C35E8F3EBF /* ViewVerticalMover.swift */; };
-		E94FA26701AD51BA780AD67F5015C376 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95955982185147D5573E79F33F4461 /* ViewPresenter.swift */; };
-		EA0F4C5F8D2628C0A622BFBBC99C8BC8 /* ModalViewDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C9B75D3533E7F904C845F5948CDC0 /* ModalViewDismisser.swift */; };
+		971B673F233E3EEF04DD98B6CA51B4DF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F45DD353E988114701320F5DCEA846 /* Presentable.swift */; };
+		9BDDA5ED554B05EAEA894A8A9CB5518D /* ViewAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F00232910BE24A0A7A21B4BA99D4C7 /* ViewAnimatable.swift */; };
+		AE4D09E62025E49ED67ABCA107C76CA1 /* VerticalMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA767C262907EAC98B112853C1F3A15C /* VerticalMovable.swift */; };
+		B10D8574695D88E890A1674048CD2287 /* CenterAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BE9232FB61A0C86C7F7D2084C5B30 /* CenterAdjustable.swift */; };
+		BF52DBF9984FB0DB998CFDDB86209375 /* ConstraintAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D0ABC886542054ABD779D979D9806 /* ConstraintAnimator.swift */; };
+		CACE48A54E8338131E1FE05A9A84EC73 /* CenterAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F6EC7ADEA99996C1448885F6CFE954 /* CenterAdjuster.swift */; };
+		CECD883C6613FAEB306B3DADF1A9E553 /* ViewVerticalMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA54124185506782901E3C8D48659A /* ViewVerticalMover.swift */; };
+		E222D7AE0E91D78F6BA2A29955FCAA93 /* AlphaAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C66FC4999CD8D1CC4B027205C598DD /* AlphaAnimatable.swift */; };
+		E89B388D7E6C9FBEFDF2718D9A999181 /* ConstraintAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58842DD972949D305A5B48B8D7845129 /* ConstraintAnimatable.swift */; };
+		E97330E8B73ACC3E9C79A1920442E5EA /* BackgroundOverlayDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CCCA0B307875CC9E91F58FCA00D87 /* BackgroundOverlayDesignable.swift */; };
 		EB0D845717F0678C7D0B88A2AF7C07D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F8DD02B40E5640562D955E8AD1D9BA58 /* BackgroundOverlayDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F2B38E2748AF45734A8E548D22A201 /* BackgroundOverlayDesignable.swift */; };
-		FC10E01ABB648BF9933A37BE74040274 /* VerticalMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB78F6FE0D3F838F4A43734B6DA55D /* VerticalMovable.swift */; };
+		F0A8518D399B8BD4C5C225B339324900 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DBFD4C95C83D3A8F6611BF2BE8338 /* BaseView.swift */; };
+		F6DF89D89598DFFA36EF07B54F71E8D7 /* VelarPresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0A7EEF1A632F85768C53AFBD7736D /* VelarPresenterBuilder.swift */; };
+		FB5CB0C606D67F3A02636861C9C89194 /* VelarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48339021A6D0A0432CFFC6E0C4585EE2 /* VelarPresenter.swift */; };
+		FF1BE4FA928CFDA5BDC906797CA7E407 /* CenterMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B992334086AEDD84C02CFA0F014C9 /* CenterMovable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,69 +58,69 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0211809D27A01EA5868CBBE246652BCE /* Velar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Velar-dummy.m"; sourceTree = "<group>"; };
+		0EBA54124185506782901E3C8D48659A /* ViewVerticalMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewVerticalMover.swift; sourceTree = "<group>"; };
 		0FA08D5DFBF4A0E77B05C386AD7B8BC4 /* Pods-Velar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Velar_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		10457CAEB1EC24048578C2EF135C87AF /* Velar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Velar-dummy.m"; sourceTree = "<group>"; };
 		11B110C463325FB932251F3B84007FF8 /* Pods-Velar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Velar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1D567ABBC168EE14E2D8427209D1AE5E /* Velar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Velar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		26AB78F6FE0D3F838F4A43734B6DA55D /* VerticalMovable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalMovable.swift; sourceTree = "<group>"; };
-		2964AC870BE23FD47A1FA597907738C0 /* Pods-Velar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Velar_Tests.modulemap"; sourceTree = "<group>"; };
-		2BB49A8AC6BEA6CF70C5ADE9CB2A34EB /* Pods_Velar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Velar_Tests.framework; path = "Pods-Velar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F6EC7ADEA99996C1448885F6CFE954 /* CenterAdjuster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterAdjuster.swift; sourceTree = "<group>"; };
+		1CD5FE1D13E8C353B22AA5A727193AEF /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewAnimator.swift; sourceTree = "<group>"; };
+		1D290D78D2635224C15BA70ED09E5064 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		26F00232910BE24A0A7A21B4BA99D4C7 /* ViewAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewAnimatable.swift; sourceTree = "<group>"; };
+		2964AC870BE23FD47A1FA597907738C0 /* Pods-Velar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Velar_Tests.modulemap"; sourceTree = "<group>"; };
+		2BB49A8AC6BEA6CF70C5ADE9CB2A34EB /* Pods_Velar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Velar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEF8FA8B7247599E9F68EA86EC91A80 /* Pods-Velar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Velar_Example-dummy.m"; sourceTree = "<group>"; };
-		30D6A885CDAFF09E5B31ACF01124F7DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4067A001D86B7526CED5C32FF2F14B34 /* BackgroundOverlayView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BackgroundOverlayView.xib; sourceTree = "<group>"; };
+		33F45DD353E988114701320F5DCEA846 /* Presentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		39D0A7EEF1A632F85768C53AFBD7736D /* VelarPresenterBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VelarPresenterBuilder.swift; sourceTree = "<group>"; };
+		3F2F64FDF193A6CD2928A9AD05DCD47F /* AlphaAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlphaAnimator.swift; sourceTree = "<group>"; };
 		432F5BDC6DC47DA4672F058498F7E1AF /* Pods-Velar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Velar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		46F6B52357BB09759716800C89B78523 /* AlphaAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlphaAnimatable.swift; sourceTree = "<group>"; };
-		4B52D4F4C43CD03BA200455A9AC30728 /* ConstraintAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintAnimatable.swift; sourceTree = "<group>"; };
-		52AE9E502952BD37363B24DA21A4B2DB /* AlphaAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlphaAnimator.swift; sourceTree = "<group>"; };
-		537F425999457FF062C890543BEF2212 /* Pods-Velar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Velar_Example.modulemap"; sourceTree = "<group>"; };
+		48339021A6D0A0432CFFC6E0C4585EE2 /* VelarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VelarPresenter.swift; sourceTree = "<group>"; };
+		4940BBBA9738DA590A3ECAE901EEBBF4 /* Velar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Velar.modulemap; sourceTree = "<group>"; };
+		49B0F99FD681DF6021BE8FC60F8368AC /* VerticalCenterMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalCenterMover.swift; sourceTree = "<group>"; };
+		4E5B2B9E871B4CB7BF10F5731232E412 /* PanGestureAdder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanGestureAdder.swift; sourceTree = "<group>"; };
+		537F425999457FF062C890543BEF2212 /* Pods-Velar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Velar_Example.modulemap"; sourceTree = "<group>"; };
 		54DAFA23968D71B6301686FB4BEC4E34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		558001E27329CBF3F9268329511AABEC /* Pods-Velar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Velar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		57DFA38900A94134018957078AF045C9 /* Velar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Velar.modulemap; sourceTree = "<group>"; };
+		56CBB1E59069A270799B76358B5EB283 /* GestureAdder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GestureAdder.swift; sourceTree = "<group>"; };
+		58842DD972949D305A5B48B8D7845129 /* ConstraintAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintAnimatable.swift; sourceTree = "<group>"; };
 		5E1FB542AF8E9FAA7AE96A77A2AE6613 /* Pods-Velar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Velar_Example-umbrella.h"; sourceTree = "<group>"; };
 		616F88350EB7B2F517BD6913A046C62F /* Pods-Velar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Velar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		639E1D18E2A8AFC2100C32EDBA7AEE03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6819FAB8BC7BC785F14135AA7E785E2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CDD8CF6CDA24B72147877D88B7D05B5 /* ModelViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModelViewBuilder.swift; sourceTree = "<group>"; };
-		76BB46000E4BBD1B9AE708C35E8F3EBF /* ViewVerticalMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewVerticalMover.swift; sourceTree = "<group>"; };
+		667D0ABC886542054ABD779D979D9806 /* ConstraintAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintAnimator.swift; sourceTree = "<group>"; };
 		7729D77831421E47FB21D12133DE6313 /* Pods-Velar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Velar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		78316B7ABCCC0E92F5487E78C4C1EA5F /* Velar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Velar.framework; path = Velar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78316B7ABCCC0E92F5487E78C4C1EA5F /* Velar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Velar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC5169CCCCBB8A4262DA08DF936A538 /* Pods-Velar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Velar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7D95955982185147D5573E79F33F4461 /* ViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
-		7E1061F90D2AC7D9F68DCFEA47CF5FB1 /* BackgroundOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundOverlayView.swift; sourceTree = "<group>"; };
-		851BD05AC85ADCC98F7F406564C1E2C1 /* Velar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Velar-prefix.pch"; sourceTree = "<group>"; };
-		85566642E52CC589DFED812FCE02228C /* ViewAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewAnimatable.swift; sourceTree = "<group>"; };
-		92DAE315E57152C55D8653094244D382 /* Velar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Velar.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98F2B38E2748AF45734A8E548D22A201 /* BackgroundOverlayDesignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundOverlayDesignable.swift; sourceTree = "<group>"; };
-		9FE7BF89166CF634264234393B8EB7A5 /* ViewConstraintGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewConstraintGenerator.swift; sourceTree = "<group>"; };
-		A181FDECC7318DB5C228BAE2EB11BA80 /* ConstraintGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintGenerator.swift; sourceTree = "<group>"; };
-		A21E0BFA3BE31AF68BE84622854603D7 /* Pods_Velar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Velar_Example.framework; path = "Pods-Velar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2358984FB5A2135C2FBE32E35A245CF /* VerticalCenterMover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalCenterMover.swift; sourceTree = "<group>"; };
-		A402B6E1F4401B2005CCB4B33915CA42 /* CenterAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterAdjustable.swift; sourceTree = "<group>"; };
-		A6A51C5ABA1A89C3AFCE123ACC79780B /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		AB8C9B75D3533E7F904C845F5948CDC0 /* ModalViewDismisser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalViewDismisser.swift; sourceTree = "<group>"; };
-		B10886731FAAB25FC8113F0168DC6A91 /* ModalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
-		B3A55F4EE64098B2D328838A745FCF67 /* PanGestureAdderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanGestureAdderDelegate.swift; sourceTree = "<group>"; };
-		B52A007E2E08F955A9AD68E21E7CAD03 /* CenterAdjuster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterAdjuster.swift; sourceTree = "<group>"; };
+		87F723C282C5ECB6BAFF26757F25EFD4 /* PanGestureAdderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanGestureAdderDelegate.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A12C1F6EEA7D789ED7C0A0BA3716004D /* BaseView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BaseView.xib; sourceTree = "<group>"; };
+		A21E0BFA3BE31AF68BE84622854603D7 /* Pods_Velar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Velar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3CCCA0B307875CC9E91F58FCA00D87 /* BackgroundOverlayDesignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundOverlayDesignable.swift; sourceTree = "<group>"; };
+		ACC3CA7D6957FD1CBDB2C7E3623002E2 /* BackgroundOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundOverlayView.swift; sourceTree = "<group>"; };
+		B4CB488B641388C946410F1686C0859A /* ModalViewDismisser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalViewDismisser.swift; sourceTree = "<group>"; };
+		BD2D95C5FB72BF384847352E2D14AC05 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BD7B992334086AEDD84C02CFA0F014C9 /* CenterMovable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterMovable.swift; sourceTree = "<group>"; };
 		BD8668777DA81C990EF1BCF66C9E7C6D /* Pods-Velar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Velar_Tests-dummy.m"; sourceTree = "<group>"; };
 		C0D272E390D9E6D37006D70CE6ED6EC8 /* Pods-Velar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Velar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C1F63C39F4F418B9A6A3C0018300F0AE /* Presentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
-		C61D34B4AF5F44FA1F1C99E3B34CECC0 /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewAnimator.swift; sourceTree = "<group>"; };
-		C78B527F0574E35345B56008256E4295 /* ConstraintAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintAnimator.swift; sourceTree = "<group>"; };
+		C0D275EC31D71A98B74F98A14C36D8C6 /* Velar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Velar-umbrella.h"; sourceTree = "<group>"; };
+		C2B2F2839202230BC07357AD4A49FF7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C908A36B4B726C90E05CCB71DC24EE8C /* Velar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Velar-prefix.pch"; sourceTree = "<group>"; };
 		CA645BFAC683328B06FFAD22D0315A51 /* Pods-Velar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Velar_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CC00CFFBECFE1D202945E9EF6150200C /* GestureAdder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GestureAdder.swift; sourceTree = "<group>"; };
-		CF12DE84C8C2585A74D0638B35F5E221 /* Velar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Velar-umbrella.h"; sourceTree = "<group>"; };
 		D2A613992908D860802E0E4909401EAF /* Pods-Velar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Velar_Example-resources.sh"; sourceTree = "<group>"; };
-		D3E7919067770D3659E97BA141362CBE /* BaseView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BaseView.xib; sourceTree = "<group>"; };
+		D5C93F7877576733630A370DE2F4F1BE /* Velar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Velar.xcconfig; sourceTree = "<group>"; };
+		D87BC0B353841E23ACF91F6FD8E62149 /* Velar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Velar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA767C262907EAC98B112853C1F3A15C /* VerticalMovable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticalMovable.swift; sourceTree = "<group>"; };
 		DA772BB2FF0258CC9257DC8FA95E37A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD904DC800FCA7A34C72F27A318BC28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DB5DBFD4C95C83D3A8F6611BF2BE8338 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DB85062B79B84F4FCD00E1477183CAA2 /* ConstraintGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintGenerator.swift; sourceTree = "<group>"; };
 		DDE56CC98717BBB7FC10183D23B40CC4 /* Pods-Velar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Velar_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DE5C1E6BE64987B13F843B69173226D8 /* Dismissable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
 		E0852D2AFDA859A52A529F04A750C745 /* Pods-Velar_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Velar_Tests-resources.sh"; sourceTree = "<group>"; };
-		EEE525CC49206B7BCB91F844C81BD10C /* CenterMovable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterMovable.swift; sourceTree = "<group>"; };
-		F29FD18099A59893D483B72BB40B3226 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E11A79C31E9FFC7A6B5A8251D82C1CBB /* ViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		E27BE9232FB61A0C86C7F7D2084C5B30 /* CenterAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CenterAdjustable.swift; sourceTree = "<group>"; };
+		E46617BA6821B1A645E26BD10E9B52EB /* ViewConstraintGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewConstraintGenerator.swift; sourceTree = "<group>"; };
+		E551A72B2594DB351D55502C2E6E21E9 /* Dismissable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
+		E9C66FC4999CD8D1CC4B027205C598DD /* AlphaAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlphaAnimatable.swift; sourceTree = "<group>"; };
+		ED2A912A9F2D683EF2292C70FBE31995 /* BackgroundOverlayView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BackgroundOverlayView.xib; sourceTree = "<group>"; };
 		F57A8347917A243DA60DA2DC317AB028 /* Pods-Velar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Velar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FBF664A70333891B1092EB0112D30FB7 /* PanGestureAdder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanGestureAdder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,72 +151,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030C6D754E0D0FB7B788616A6F123AB2 /* Helper Classes */ = {
+		0B2F5F2162CDBF1D6D02C88E3AA4AD2B /* Background Overlay View */ = {
 			isa = PBXGroup;
 			children = (
-				52AE9E502952BD37363B24DA21A4B2DB /* AlphaAnimator.swift */,
-				B52A007E2E08F955A9AD68E21E7CAD03 /* CenterAdjuster.swift */,
-				C78B527F0574E35345B56008256E4295 /* ConstraintAnimator.swift */,
-				AB8C9B75D3533E7F904C845F5948CDC0 /* ModalViewDismisser.swift */,
-				FBF664A70333891B1092EB0112D30FB7 /* PanGestureAdder.swift */,
-				A2358984FB5A2135C2FBE32E35A245CF /* VerticalCenterMover.swift */,
-				C61D34B4AF5F44FA1F1C99E3B34CECC0 /* ViewAnimator.swift */,
-				9FE7BF89166CF634264234393B8EB7A5 /* ViewConstraintGenerator.swift */,
-				7D95955982185147D5573E79F33F4461 /* ViewPresenter.swift */,
-				76BB46000E4BBD1B9AE708C35E8F3EBF /* ViewVerticalMover.swift */,
-			);
-			name = "Helper Classes";
-			path = "Velar/Classes/Helper Classes";
-			sourceTree = "<group>";
-		};
-		081328CF24F073261E8BEA6D9F8CA273 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6819FAB8BC7BC785F14135AA7E785E2F /* Info.plist */,
-				57DFA38900A94134018957078AF045C9 /* Velar.modulemap */,
-				92DAE315E57152C55D8653094244D382 /* Velar.xcconfig */,
-				10457CAEB1EC24048578C2EF135C87AF /* Velar-dummy.m */,
-				851BD05AC85ADCC98F7F406564C1E2C1 /* Velar-prefix.pch */,
-				CF12DE84C8C2585A74D0638B35F5E221 /* Velar-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Velar";
-			sourceTree = "<group>";
-		};
-		25B7B2A62FF0225C7C1BA70DA19C6F42 /* Base View */ = {
-			isa = PBXGroup;
-			children = (
-				A6A51C5ABA1A89C3AFCE123ACC79780B /* BaseView.swift */,
-				D3E7919067770D3659E97BA141362CBE /* BaseView.xib */,
-			);
-			name = "Base View";
-			path = "Velar/Classes/Base View";
-			sourceTree = "<group>";
-		};
-		670DAFFA778E2932560210749C351275 /* Background Overlay View */ = {
-			isa = PBXGroup;
-			children = (
-				7E1061F90D2AC7D9F68DCFEA47CF5FB1 /* BackgroundOverlayView.swift */,
-				4067A001D86B7526CED5C32FF2F14B34 /* BackgroundOverlayView.xib */,
+				ACC3CA7D6957FD1CBDB2C7E3623002E2 /* BackgroundOverlayView.swift */,
+				ED2A912A9F2D683EF2292C70FBE31995 /* BackgroundOverlayView.xib */,
 			);
 			name = "Background Overlay View";
 			path = "Velar/Classes/Background Overlay View";
 			sourceTree = "<group>";
 		};
-		6D491C102EDEDABF1F245FC60BEC0C29 /* Velar */ = {
+		10BDC73F710ED478C2E0B631F28F7E93 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				670DAFFA778E2932560210749C351275 /* Background Overlay View */,
-				25B7B2A62FF0225C7C1BA70DA19C6F42 /* Base View */,
-				D506BF82FA719B3514BE7914AE310C2B /* Extensions */,
-				030C6D754E0D0FB7B788616A6F123AB2 /* Helper Classes */,
-				B17E6CF31E576772EE84A04BEB027CB6 /* Modal View */,
-				CC659A74229BDF8F37D6197CE9E21BB3 /* Pod */,
-				C5CBA9D6AC6A63B4AB6B1DA0CAFB4EE9 /* Protocols */,
-				081328CF24F073261E8BEA6D9F8CA273 /* Support Files */,
+				E9C66FC4999CD8D1CC4B027205C598DD /* AlphaAnimatable.swift */,
+				AA3CCCA0B307875CC9E91F58FCA00D87 /* BackgroundOverlayDesignable.swift */,
+				E27BE9232FB61A0C86C7F7D2084C5B30 /* CenterAdjustable.swift */,
+				BD7B992334086AEDD84C02CFA0F014C9 /* CenterMovable.swift */,
+				58842DD972949D305A5B48B8D7845129 /* ConstraintAnimatable.swift */,
+				DB85062B79B84F4FCD00E1477183CAA2 /* ConstraintGenerator.swift */,
+				E551A72B2594DB351D55502C2E6E21E9 /* Dismissable.swift */,
+				56CBB1E59069A270799B76358B5EB283 /* GestureAdder.swift */,
+				87F723C282C5ECB6BAFF26757F25EFD4 /* PanGestureAdderDelegate.swift */,
+				33F45DD353E988114701320F5DCEA846 /* Presentable.swift */,
+				DA767C262907EAC98B112853C1F3A15C /* VerticalMovable.swift */,
+				26F00232910BE24A0A7A21B4BA99D4C7 /* ViewAnimatable.swift */,
+			);
+			name = Protocols;
+			path = Velar/Classes/Protocols;
+			sourceTree = "<group>";
+		};
+		1AD3D307BB6F0B9D707B17C19E6856DD /* Velar */ = {
+			isa = PBXGroup;
+			children = (
+				2045433420937DF500ED56E6 /* Builder */,
+				0B2F5F2162CDBF1D6D02C88E3AA4AD2B /* Background Overlay View */,
+				A3A79579686EA87D79918283BFADEF05 /* Base View */,
+				40359B738E7D05A8214FFF22EB94D60C /* Extensions */,
+				D9BE7AF6F544F42F96E9051E9AEEDE69 /* Helper Classes */,
+				53D843880452E8C026CDEDB8A1250137 /* Pod */,
+				10BDC73F710ED478C2E0B631F28F7E93 /* Protocols */,
+				BDD9E388BD99BD5EB84F709FA7E03FD4 /* Support Files */,
+				7B364ADD879B909B30F9804624956961 /* VelarPresenter */,
 			);
 			name = Velar;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		2045433420937DF500ED56E6 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				39D0A7EEF1A632F85768C53AFBD7736D /* VelarPresenterBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		40359B738E7D05A8214FFF22EB94D60C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD2D95C5FB72BF384847352E2D14AC05 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			path = Velar/Classes/Extensions;
+			sourceTree = "<group>";
+		};
+		53D843880452E8C026CDEDB8A1250137 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1D290D78D2635224C15BA70ED09E5064 /* LICENSE */,
+				DAD904DC800FCA7A34C72F27A318BC28 /* README.md */,
+				D87BC0B353841E23ACF91F6FD8E62149 /* Velar.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7B364ADD879B909B30F9804624956961 /* VelarPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				48339021A6D0A0432CFFC6E0C4585EE2 /* VelarPresenter.swift */,
+			);
+			name = VelarPresenter;
+			path = Velar/Classes/VelarPresenter;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -240,6 +255,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A3A79579686EA87D79918283BFADEF05 /* Base View */ = {
+			isa = PBXGroup;
+			children = (
+				DB5DBFD4C95C83D3A8F6611BF2BE8338 /* BaseView.swift */,
+				A12C1F6EEA7D789ED7C0A0BA3716004D /* BaseView.xib */,
+			);
+			name = "Base View";
+			path = "Velar/Classes/Base View";
+			sourceTree = "<group>";
+		};
 		AAF3E179A6F17953D928D987EAC00A83 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,15 +272,6 @@
 				C464B0FEE286A782614FBFA485C8F5CB /* Pods-Velar_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B17E6CF31E576772EE84A04BEB027CB6 /* Modal View */ = {
-			isa = PBXGroup;
-			children = (
-				B10886731FAAB25FC8113F0168DC6A91 /* ModalView.swift */,
-			);
-			name = "Modal View";
-			path = "Velar/Classes/Modal View";
 			sourceTree = "<group>";
 		};
 		BA640D1276942ADD46075A123BBA6C55 /* Pods-Velar_Example */ = {
@@ -279,7 +295,7 @@
 		BC291FC6EDB6E860C8813F3B2D24720A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6D491C102EDEDABF1F245FC60BEC0C29 /* Velar */,
+				1AD3D307BB6F0B9D707B17C19E6856DD /* Velar */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -290,6 +306,20 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDD9E388BD99BD5EB84F709FA7E03FD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2F2839202230BC07357AD4A49FF7A /* Info.plist */,
+				4940BBBA9738DA590A3ECAE901EEBBF4 /* Velar.modulemap */,
+				D5C93F7877576733630A370DE2F4F1BE /* Velar.xcconfig */,
+				0211809D27A01EA5868CBBE246652BCE /* Velar-dummy.m */,
+				C908A36B4B726C90E05CCB71DC24EE8C /* Velar-prefix.pch */,
+				C0D275EC31D71A98B74F98A14C36D8C6 /* Velar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Velar";
 			sourceTree = "<group>";
 		};
 		C464B0FEE286A782614FBFA485C8F5CB /* Pods-Velar_Tests */ = {
@@ -310,36 +340,6 @@
 			path = "Target Support Files/Pods-Velar_Tests";
 			sourceTree = "<group>";
 		};
-		C5CBA9D6AC6A63B4AB6B1DA0CAFB4EE9 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				46F6B52357BB09759716800C89B78523 /* AlphaAnimatable.swift */,
-				98F2B38E2748AF45734A8E548D22A201 /* BackgroundOverlayDesignable.swift */,
-				A402B6E1F4401B2005CCB4B33915CA42 /* CenterAdjustable.swift */,
-				EEE525CC49206B7BCB91F844C81BD10C /* CenterMovable.swift */,
-				4B52D4F4C43CD03BA200455A9AC30728 /* ConstraintAnimatable.swift */,
-				A181FDECC7318DB5C228BAE2EB11BA80 /* ConstraintGenerator.swift */,
-				DE5C1E6BE64987B13F843B69173226D8 /* Dismissable.swift */,
-				CC00CFFBECFE1D202945E9EF6150200C /* GestureAdder.swift */,
-				B3A55F4EE64098B2D328838A745FCF67 /* PanGestureAdderDelegate.swift */,
-				C1F63C39F4F418B9A6A3C0018300F0AE /* Presentable.swift */,
-				26AB78F6FE0D3F838F4A43734B6DA55D /* VerticalMovable.swift */,
-				85566642E52CC589DFED812FCE02228C /* ViewAnimatable.swift */,
-			);
-			name = Protocols;
-			path = Velar/Classes/Protocols;
-			sourceTree = "<group>";
-		};
-		CC659A74229BDF8F37D6197CE9E21BB3 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				30D6A885CDAFF09E5B31ACF01124F7DF /* LICENSE */,
-				639E1D18E2A8AFC2100C32EDBA7AEE03 /* README.md */,
-				1D567ABBC168EE14E2D8427209D1AE5E /* Velar.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,14 +348,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D506BF82FA719B3514BE7914AE310C2B /* Extensions */ = {
+		D9BE7AF6F544F42F96E9051E9AEEDE69 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6CDD8CF6CDA24B72147877D88B7D05B5 /* ModelViewBuilder.swift */,
-				F29FD18099A59893D483B72BB40B3226 /* UIViewExtension.swift */,
+				3F2F64FDF193A6CD2928A9AD05DCD47F /* AlphaAnimator.swift */,
+				17F6EC7ADEA99996C1448885F6CFE954 /* CenterAdjuster.swift */,
+				667D0ABC886542054ABD779D979D9806 /* ConstraintAnimator.swift */,
+				B4CB488B641388C946410F1686C0859A /* ModalViewDismisser.swift */,
+				4E5B2B9E871B4CB7BF10F5731232E412 /* PanGestureAdder.swift */,
+				49B0F99FD681DF6021BE8FC60F8368AC /* VerticalCenterMover.swift */,
+				1CD5FE1D13E8C353B22AA5A727193AEF /* ViewAnimator.swift */,
+				E46617BA6821B1A645E26BD10E9B52EB /* ViewConstraintGenerator.swift */,
+				E11A79C31E9FFC7A6B5A8251D82C1CBB /* ViewPresenter.swift */,
+				0EBA54124185506782901E3C8D48659A /* ViewVerticalMover.swift */,
 			);
-			name = Extensions;
-			path = Velar/Classes/Extensions;
+			name = "Helper Classes";
+			path = "Velar/Classes/Helper Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +400,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFF517B5FECE68B8CED7F361D9D16853 /* Build configuration list for PBXNativeTarget "Velar" */;
 			buildPhases = (
-				D1672523D9DDD61872C5A411A0DF0A3F /* Sources */,
+				423C2F8062B5EAE084D351A4BE68E040 /* Sources */,
 				A3DF95B853BFCCC4BC0B746AC9D79695 /* Frameworks */,
 				A0F29138346D229C60FF356027BFCDB4 /* Headers */,
 			);
@@ -477,48 +485,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		423C2F8062B5EAE084D351A4BE68E040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E222D7AE0E91D78F6BA2A29955FCAA93 /* AlphaAnimatable.swift in Sources */,
+				58DEB7C05EB48CBF944707358B1C7594 /* AlphaAnimator.swift in Sources */,
+				E97330E8B73ACC3E9C79A1920442E5EA /* BackgroundOverlayDesignable.swift in Sources */,
+				6ABEDD03767D175BC6A4B067D206D171 /* BackgroundOverlayView.swift in Sources */,
+				88B7D9887F0ABC52A8CDD3EE9CAB1B92 /* BackgroundOverlayView.xib in Sources */,
+				F0A8518D399B8BD4C5C225B339324900 /* BaseView.swift in Sources */,
+				5FA9874CA85CD988A0FAD0DBDD45CCE0 /* BaseView.xib in Sources */,
+				B10D8574695D88E890A1674048CD2287 /* CenterAdjustable.swift in Sources */,
+				CACE48A54E8338131E1FE05A9A84EC73 /* CenterAdjuster.swift in Sources */,
+				FF1BE4FA928CFDA5BDC906797CA7E407 /* CenterMovable.swift in Sources */,
+				E89B388D7E6C9FBEFDF2718D9A999181 /* ConstraintAnimatable.swift in Sources */,
+				BF52DBF9984FB0DB998CFDDB86209375 /* ConstraintAnimator.swift in Sources */,
+				7CC8D6E3890D5F2315458B5A993B9498 /* ConstraintGenerator.swift in Sources */,
+				7BA9EDA6675A1B622E290A1AB9D391C4 /* Dismissable.swift in Sources */,
+				7694C6AB0D1207654897D4D83B94BA8C /* GestureAdder.swift in Sources */,
+				3D83E562C80999EBD22CC0993D4C5F1B /* ModalViewDismisser.swift in Sources */,
+				F6DF89D89598DFFA36EF07B54F71E8D7 /* VelarPresenterBuilder.swift in Sources */,
+				61EE007538FB1B4360BAB61FB34829E1 /* PanGestureAdder.swift in Sources */,
+				60D0D02D6C0A541D05C9E5F06E03E463 /* PanGestureAdderDelegate.swift in Sources */,
+				971B673F233E3EEF04DD98B6CA51B4DF /* Presentable.swift in Sources */,
+				06BDFF68DA7714822EDB453D1ED4B835 /* UIViewExtension.swift in Sources */,
+				4AFDEAC8975C46479210A2A48671E71C /* Velar-dummy.m in Sources */,
+				FB5CB0C606D67F3A02636861C9C89194 /* VelarPresenter.swift in Sources */,
+				76305F9F7451FF164118FF20699A5157 /* VerticalCenterMover.swift in Sources */,
+				AE4D09E62025E49ED67ABCA107C76CA1 /* VerticalMovable.swift in Sources */,
+				9BDDA5ED554B05EAEA894A8A9CB5518D /* ViewAnimatable.swift in Sources */,
+				42ECE4040C69963D1F084DE0B4A6BC5E /* ViewAnimator.swift in Sources */,
+				93A205DC4E524085BA056EFEEBE19A29 /* ViewConstraintGenerator.swift in Sources */,
+				514A7A634C7D08783C22988F086AFDFB /* ViewPresenter.swift in Sources */,
+				CECD883C6613FAEB306B3DADF1A9E553 /* ViewVerticalMover.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96C7BE119632FF71966F760276BD946A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				574789361D545F361E7A652D698F77A4 /* Pods-Velar_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1672523D9DDD61872C5A411A0DF0A3F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06BFD84226E52654C30B915B3614A42F /* AlphaAnimatable.swift in Sources */,
-				DFBC436E7907D8F6F6379E5ED8392DF1 /* AlphaAnimator.swift in Sources */,
-				F8DD02B40E5640562D955E8AD1D9BA58 /* BackgroundOverlayDesignable.swift in Sources */,
-				72195F8287B53BA2ED54A9325DC24E2E /* BackgroundOverlayView.swift in Sources */,
-				42EE16E83C19FA00A26AC273B62C3982 /* BackgroundOverlayView.xib in Sources */,
-				0200D4AFE0753E0271C9A46EB5609F95 /* BaseView.swift in Sources */,
-				5D38FFF56D2EC8AFDFA32C27A902FCB6 /* BaseView.xib in Sources */,
-				71B04B175F002D922D7F6A218A5519E8 /* CenterAdjustable.swift in Sources */,
-				A5DDE85960C7ED916E3C971FC7C941DD /* CenterAdjuster.swift in Sources */,
-				1B1F926AD23BF4E31A1487E8341A5971 /* CenterMovable.swift in Sources */,
-				330D5F2C4660136ADF2F2A265019908B /* ConstraintAnimatable.swift in Sources */,
-				AADFCA5C5115788635D5B0C5893ED5A1 /* ConstraintAnimator.swift in Sources */,
-				1FC7919E559BA1DBACC3EEEA0ACD5BF6 /* ConstraintGenerator.swift in Sources */,
-				76F8FD708D56EC9AE31D821ABC426976 /* Dismissable.swift in Sources */,
-				CAB7267E9AFA78007FD52986C652252F /* GestureAdder.swift in Sources */,
-				525453F701A8DE040625DA83BAEEC7ED /* ModalView.swift in Sources */,
-				EA0F4C5F8D2628C0A622BFBBC99C8BC8 /* ModalViewDismisser.swift in Sources */,
-				9DD0E6E3D9D496A6EEEE17FB505594E2 /* ModelViewBuilder.swift in Sources */,
-				8B2D8356166BCF54BB7E2EB23E8F0C04 /* PanGestureAdder.swift in Sources */,
-				4304CDD3220EACD1FF76F8CF15FCE766 /* PanGestureAdderDelegate.swift in Sources */,
-				034FBAD7B30036D941312F23E7E17D7A /* Presentable.swift in Sources */,
-				2C247213A443097A4246D78E5720E604 /* UIViewExtension.swift in Sources */,
-				58698DFC650587EA27BB9B52F48479E0 /* Velar-dummy.m in Sources */,
-				157B22293F8D85866584E27B706703B1 /* VerticalCenterMover.swift in Sources */,
-				FC10E01ABB648BF9933A37BE74040274 /* VerticalMovable.swift in Sources */,
-				B4A6515669E6F21E6D70FCF2D2680F7E /* ViewAnimatable.swift in Sources */,
-				BE875C377C03AE85A9E8588D18093402 /* ViewAnimator.swift in Sources */,
-				C72D7320ED6318B8559F93227D50D040 /* ViewConstraintGenerator.swift in Sources */,
-				E94FA26701AD51BA780AD67F5015C376 /* ViewPresenter.swift in Sources */,
-				E4E8023D412CBDD9534BCE610A44C72C /* ViewVerticalMover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,7 +664,7 @@
 		};
 		D34383951DCAC519C26E7ADB074EDA0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92DAE315E57152C55D8653094244D382 /* Velar.xcconfig */;
+			baseConfigurationReference = D5C93F7877576733630A370DE2F4F1BE /* Velar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -781,7 +789,7 @@
 		};
 		F7190ECD8AEF3031C97E6F72BC096912 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92DAE315E57152C55D8653094244D382 /* Velar.xcconfig */;
+			baseConfigurationReference = D5C93F7877576733630A370DE2F4F1BE /* Velar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

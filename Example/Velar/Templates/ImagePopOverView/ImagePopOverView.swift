@@ -13,11 +13,11 @@ final class ImagePopOverView: UIView {
 
     weak var delegate: ImagePopOverDelegate?
 
-    lazy var modalView: ModalViewPresenter = {
+    lazy var modalView: VelarPresenter = {
         guard let window = UIApplication.shared.delegate?.window else {
-            return ModalViewPresenter(parentWindow: UIWindow(), designer: DefaultBackgroundOverlayDesigner())
+            return VelarPresenter(parentWindow: UIWindow(), designer: DefaultBackgroundOverlayDesigner())
         }
-        return ModalViewPresenter(parentWindow: window!, designer: DefaultBackgroundOverlayDesigner())
+        return VelarPresenter(parentWindow: window!, designer: DefaultBackgroundOverlayDesigner())
     }()
     
     override func awakeFromNib() {

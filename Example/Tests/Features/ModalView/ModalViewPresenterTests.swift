@@ -11,7 +11,7 @@ import XCTest
 @testable import Velar
 class ModalViewPresenterTests: XCTestCase {
     
-    var sut: ModalViewPresenter!
+    var sut: VelarPresenter!
     var window: UIWindow!
     
     var fakeViewPresenter: FakeViewPresenter!
@@ -22,7 +22,7 @@ class ModalViewPresenterTests: XCTestCase {
         super.setUp()
 
         window = UIWindow()
-        sut = ModalViewPresenter(parentWindow: window, designer: FakeOverlayDesigner())
+        sut = VelarPresenter(parentWindow: window, designer: FakeOverlayDesigner())
         
         fakeViewPresenter = FakeViewPresenter()
         sut.baseView.viewPresenter = fakeViewPresenter
@@ -34,7 +34,7 @@ class ModalViewPresenterTests: XCTestCase {
     func testShowModal_Animated() {
         let view = UIView()
         
-        sut.showModal(view: view, animate: true)
+        sut.show(view: view, animate: true)
         
         XCTAssertEqual(sut.backgroundOverlayView.superview, window)
         XCTAssertEqual(sut.baseView.superview, window)
@@ -45,7 +45,7 @@ class ModalViewPresenterTests: XCTestCase {
     func testShowModal_NotAnimated() {
         let view = UIView()
         
-        sut.showModal(view: view, animate: false)
+        sut.show(view: view, animate: false)
         
         XCTAssertEqual(sut.backgroundOverlayView.superview, window)
         XCTAssertEqual(sut.baseView.superview, window)
@@ -55,7 +55,7 @@ class ModalViewPresenterTests: XCTestCase {
     
     func testHideModal_Animated() {
         
-        sut.hideModal(animate: true)
+        sut.hide(animate: true)
         
         XCTAssertNil(sut.baseView.superview)
         XCTAssertNil(sut.baseView.viewPresenter.view?.superview)
@@ -64,7 +64,7 @@ class ModalViewPresenterTests: XCTestCase {
     
     func testHideModal_NotAnimated() {
         
-        sut.hideModal(animate: false)
+        sut.hide(animate: false)
         
         XCTAssertNil(sut.baseView.superview)
         XCTAssertNil(sut.baseView.viewPresenter.view?.superview)

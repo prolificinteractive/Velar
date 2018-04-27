@@ -11,8 +11,8 @@ import Velar
 
 class ViewController: UIViewController {
 
-    private lazy var modalView: ModalViewPresenter = {
-        return ModelViewBuilder.build(designer: DefaultBackgroundOverlayDesigner())
+    private lazy var velarPresenter: VelarPresenter = {
+        return VelarPresenterBuilder.build(designer: DefaultBackgroundOverlayDesigner())
     }()
 
     private lazy var imagePopOverView: ImagePopOverView = {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }()
 
     @IBAction private func didTapButton(_ sender: Any) {
-        modalView.showModal(view: imagePopOverView, animate: true)
+        velarPresenter.show(view: imagePopOverView, animate: true)
     }
 
 }
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 extension ViewController: ImagePopOverDelegate {
 
     func buttonSelected() {
-        modalView.hideModal(animate: true)
+        velarPresenter.hide(animate: true)
     }
 
 }
