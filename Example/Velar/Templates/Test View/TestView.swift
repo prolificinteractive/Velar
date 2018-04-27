@@ -1,6 +1,6 @@
 //
 //  TestView.swift
-//  CustomModal
+//  Velar
 //
 //  Created by Jonathan Samudio on 1/24/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.

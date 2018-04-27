@@ -1,6 +1,6 @@
 //
 //  DefaultBackgroundOverlayDesigner.swift
-//  CustomModal
+//  Velar
 //
 //  Created by Jonathan Samudio on 2/8/17.
 //  Copyright © 2017 Prolific Interactive. All rights reserved.
