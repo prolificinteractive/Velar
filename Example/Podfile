@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Velar_Example' do
+  pod 'Velar', :path => '../'
+
+  target 'Velar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

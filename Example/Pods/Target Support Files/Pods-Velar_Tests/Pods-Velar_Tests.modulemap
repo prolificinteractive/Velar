@@ -1,0 +1,6 @@
+framework module Pods_Velar_Tests {
+  umbrella header "Pods-Velar_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

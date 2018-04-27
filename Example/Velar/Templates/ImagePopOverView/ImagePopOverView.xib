@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ImagePopOverView" id="iN0-l3-epB" customClass="ImagePopOverView" customModule="Velar_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't forget to Register!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upu-fQ-5nn">
+                    <rect key="frame" x="20" y="20" width="255" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="yug-tB-k9j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-s7-i9n">
+                    <rect key="frame" x="82.5" y="75" width="130" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="7R0-lT-JB4"/>
+                        <constraint firstAttribute="height" constant="130" id="AX6-vD-PWb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've marked that you're attending. Don't forget to also register on the event's website" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-eV-zXE">
+                    <rect key="frame" x="20" y="233" width="255" height="61"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVv-hD-0xb">
+                    <rect key="frame" x="20" y="334" width="255" height="46"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.34509803919999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="255" id="6v4-ve-OKl"/>
+                        <constraint firstAttribute="height" constant="46" id="xVE-ag-xew"/>
+                    </constraints>
+                    <state key="normal" title="Ok">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonSelected" destination="iN0-l3-epB" eventType="touchUpInside" id="sYp-yt-HAb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vnj-eV-zXE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4d7-Tp-Dab"/>
+                <constraint firstItem="Hlb-s7-i9n" firstAttribute="top" secondItem="upu-fQ-5nn" secondAttribute="bottom" constant="25" id="E6p-Ic-Hev"/>
+                <constraint firstItem="Hlb-s7-i9n" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JqM-KL-B2F"/>
+                <constraint firstAttribute="bottom" secondItem="nVv-hD-0xb" secondAttribute="bottom" constant="20" id="YBk-oD-JwR"/>
+                <constraint firstAttribute="trailing" secondItem="upu-fQ-5nn" secondAttribute="trailing" constant="20" id="bXY-8K-TtS"/>
+                <constraint firstItem="vnj-eV-zXE" firstAttribute="top" secondItem="Hlb-s7-i9n" secondAttribute="bottom" constant="28" id="bq5-wy-p2r"/>
+                <constraint firstItem="upu-fQ-5nn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="eBW-pS-BhW"/>
+                <constraint firstItem="upu-fQ-5nn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="nFr-Oz-jgU"/>
+                <constraint firstItem="nVv-hD-0xb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="pfE-5N-aj9"/>
+                <constraint firstAttribute="trailing" secondItem="nVv-hD-0xb" secondAttribute="trailing" constant="20" id="rfF-Tf-Lzd"/>
+                <constraint firstAttribute="trailing" secondItem="vnj-eV-zXE" secondAttribute="trailing" constant="20" id="sr4-uS-CxR"/>
+                <constraint firstItem="nVv-hD-0xb" firstAttribute="top" secondItem="vnj-eV-zXE" secondAttribute="bottom" constant="40" id="xrV-ym-6s8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="nVv-hD-0xb" id="zI2-u8-uGV"/>
+                <outlet property="imageView" destination="Hlb-s7-i9n" id="xvz-Lr-MRr"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CalendarIcon" width="130" height="131"/>
+    </resources>
+</document>

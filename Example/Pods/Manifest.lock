@@ -1,0 +1,16 @@
+PODS:
+  - Velar (0.1.0)
+
+DEPENDENCIES:
+  - Velar (from `../`)
+
+EXTERNAL SOURCES:
+  Velar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Velar: 2ba17beffcfbf9c8e9b9d232f2b821646861ebe0
+
+PODFILE CHECKSUM: e62dde240b20b2a218e2813f322759d1b015bd10
+
+COCOAPODS: 1.4.0
