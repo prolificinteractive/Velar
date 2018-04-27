@@ -36,16 +36,20 @@ public class ModalViewPresenter {
             baseView.transitionSpeed = transitionSpeed
         }
     }
-
-    /// Base view of the modal presenter.
-    var baseView = BaseView.instanceFromNib()
-
-    /// Background view of the modal presenter.
-    var backgroundOverlayView = BackgroundOverlayView.instanceFromNib()
     
     /// Adds a gesture to the given view.
     var panGesture: GestureAdder = {
         return PanGestureAdder()
+    }()
+
+    /// Background view of the modal presenter.
+    var backgroundOverlayView = BackgroundOverlayView.instanceFromNib()
+
+    /// Base view of the modal presenter.
+    lazy var baseView: BaseView = {
+        let view = BaseView.instanceFromNib()
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backgroundViewSelected)))
+        return view
     }()
 
     /// Adds a constraint to a view and sub view.
@@ -125,6 +129,13 @@ extension ModalViewPresenter: PanGestureAdderDelegate {
         }
         verticalCenterMover.returnToCenter(view: baseView.modalView, center: baseView.center, animate: true)
         backgroundOverlayView.showDismissLabel(show: baseView.modalViewDismisser.canDismiss, animate: true)
+    }
+}
+
+private extension ModalViewPresenter {
+
+    @objc func backgroundViewSelected() {
+        hideModal(animate: true)
     }
 }
 
