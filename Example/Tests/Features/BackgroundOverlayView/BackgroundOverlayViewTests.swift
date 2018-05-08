@@ -17,7 +17,7 @@ class BackgroundOverlayViewTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        sut = BackgroundOverlayView.instanceFromNib()
+        sut = BackgroundOverlayView()
         
         fakeAlphaAnimator = FakeAlphaAnimator()
         sut.alphaAnimator = fakeAlphaAnimator
