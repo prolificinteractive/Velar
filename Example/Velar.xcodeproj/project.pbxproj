@@ -343,7 +343,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				6A2BF6098FF3267876CAA531 /* [CP] Embed Pods Frameworks */,
-				A14E898FBCF7B0052BD72BB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,8 +361,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				81AC66ED03A790AA39BB2E2E /* [CP] Embed Pods Frameworks */,
-				81AAD554A95B4CFA25CE5C8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,51 +487,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Velar_Example/Pods-Velar_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81AAD554A95B4CFA25CE5C8F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Velar_Tests/Pods-Velar_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81AC66ED03A790AA39BB2E2E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Velar_Tests/Pods-Velar_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A14E898FBCF7B0052BD72BB2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Velar_Example/Pods-Velar_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
