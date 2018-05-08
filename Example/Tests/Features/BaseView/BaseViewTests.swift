@@ -18,7 +18,7 @@ class BaseViewTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        sut = BaseView.instanceFromNib()
+        sut = BaseView()
         
         fakeViewConstraintGenerator = FakeViewConstraintGenerator()
         sut.viewConstraintGenerator = fakeViewConstraintGenerator

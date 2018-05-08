@@ -43,11 +43,11 @@ public class VelarPresenter {
     }()
 
     /// Background view of the modal presenter.
-    var backgroundOverlayView = BackgroundOverlayView.instanceFromNib()
+    var backgroundOverlayView = BackgroundOverlayView()
 
     /// Base view of the modal presenter.
     lazy var baseView: BaseView = {
-        let view = BaseView.instanceFromNib()
+        let view = BaseView()
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backgroundViewSelected)))
         return view
     }()

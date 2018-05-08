@@ -52,17 +52,32 @@ internal class BaseView: UIView {
     }()
     
     /// Container view for the custom presentable view.
-    @IBOutlet weak var modalView: UIView!
+    private(set) var modalView = UIView()
     
-    @IBOutlet private weak var centerY: NSLayoutConstraint!
+    private weak var centerY: NSLayoutConstraint!
     
-    @IBOutlet private weak var centerX: NSLayoutConstraint!
-    
-    /// Creates an instance from nib.
-    ///
-    /// - Returns: BaseView instance.
-    static func instanceFromNib() -> BaseView {
-        let bundle = Bundle(for: classForCoder())
-        return UINib(nibName: "BaseView", bundle: bundle).instantiate(withOwner: self, options: nil)[0] as! BaseView
+    private weak var centerX: NSLayoutConstraint!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+private extension BaseView {
+
+    func setupView() {
+        modalView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(modalView)
+
+        centerX = modalView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0)
+        centerX.isActive = true
+
+        centerY = modalView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0)
+        centerY.isActive = true
     }
 }
