@@ -16,9 +16,9 @@ internal class ViewPresenter: Presentable {
     
     private var verticalMover: VerticalMovable
     
-    private var superView: UIView
+    private weak var superView: UIView?
     
-    init(superView: UIView, viewConstraintGenerator: ConstraintGenerator, verticalMover: VerticalMovable) {
+    init(superView: UIView?, viewConstraintGenerator: ConstraintGenerator, verticalMover: VerticalMovable) {
         self.viewConstraintGenerator = viewConstraintGenerator
         self.verticalMover = verticalMover
         self.superView = superView
@@ -29,7 +29,8 @@ internal class ViewPresenter: Presentable {
         
         viewConstraintGenerator.constraint(subView: view, top: 0, leading: 0, bottom: 0, trailing: 0)
         
-        verticalMover.move(centerYOffset: superView.frame.height, animate: false, completion: nil)
+        superView?.layoutIfNeeded()
+        verticalMover.move(centerYOffset: superView?.frame.height ?? 0, animate: false, completion: nil)
         verticalMover.move(centerYOffset: 0, animate: animate, completion: nil)
     }
 }
