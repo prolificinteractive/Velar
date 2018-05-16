@@ -11,6 +11,8 @@ import Foundation
 internal protocol Dismissable {
     
     var canDismiss: Bool { get }
-    
+
+    var viewHeight: CGFloat { get set }
+
     func dismiss(animate: Bool, completion: (()->())?)
 }

@@ -11,7 +11,7 @@ import UIKit
 internal class ViewPresenter: Presentable {
     
     var view: UIView? = nil
-    
+
     private var viewConstraintGenerator: ConstraintGenerator
     
     private var verticalMover: VerticalMovable
@@ -19,6 +19,7 @@ internal class ViewPresenter: Presentable {
     private weak var superView: UIView?
     
     init(superView: UIView?, viewConstraintGenerator: ConstraintGenerator, verticalMover: VerticalMovable) {
+        
         self.viewConstraintGenerator = viewConstraintGenerator
         self.verticalMover = verticalMover
         self.superView = superView
@@ -26,7 +27,7 @@ internal class ViewPresenter: Presentable {
     
     func present(view: UIView, animate: Bool) {
         self.view = view
-        
+
         viewConstraintGenerator.constraint(subView: view, top: 0, leading: 0, bottom: 0, trailing: 0)
         
         superView?.layoutIfNeeded()
