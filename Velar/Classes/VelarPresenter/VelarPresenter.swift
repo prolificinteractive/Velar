@@ -27,7 +27,7 @@ public class VelarPresenter {
 
     /// Animator for changing view alpha.
     public var alphaAnimator: AlphaAnimatable = {
-        return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: 0.25)
+        return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: 0.35)
     }()
     
     /// The speed of the show and hide modal animation.
