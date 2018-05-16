@@ -698,6 +698,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B74458D812EA17F503470BCD /* Pods-Velar_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -720,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB4E23AEF5C67035F11856B9 /* Pods-Velar_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

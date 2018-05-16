@@ -13,11 +13,11 @@ internal class ModalViewDismisser: Dismissable {
     var canDismiss: Bool {
         return  (modalView.center.y - (viewHeight / 2)) > dismissThreshold
     }
-    
+
+    var viewHeight: CGFloat
+
     private var modalView: UIView
-    
-    private var viewHeight: CGFloat
-    
+
     private var dismissThreshold: CGFloat
     
     private var verticalMover: VerticalMovable
