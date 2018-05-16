@@ -134,8 +134,10 @@ extension VelarPresenter: PanGestureAdderDelegate {
 
 private extension VelarPresenter {
 
-    @objc func backgroundViewSelected() {
-        hide(animate: true)
+    @objc func backgroundViewSelected(recognizer: UIGestureRecognizer) {
+        if !baseView.modalView.frame.contains(recognizer.location(in: baseView)) {
+            hide(animate: true)
+        }
     }
 }
 
