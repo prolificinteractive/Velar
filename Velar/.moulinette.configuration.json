@@ -1,0 +1,14 @@
+{
+    "excludedRules" : [
+        "empty_icons",
+        "mark_usage",
+        "git_branches",
+        "enum_single_case",
+        "localization_found",
+        "readme_todos",
+        "git_commit_message",
+        "default_folders",
+        "cocoapods_keys",
+        ".gitignore_needed"
+    ]
+}

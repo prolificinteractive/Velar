@@ -1,0 +1,16 @@
+PODS:
+  - Moulinette (0.1.1)
+
+DEPENDENCIES:
+  - Moulinette (= 0.1.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Moulinette
+
+SPEC CHECKSUMS:
+  Moulinette: 1ee0e7f0e5f61c2c4117a55df9c0b12c5f4a7b7d
+
+PODFILE CHECKSUM: 805a7d65b4fba24d0f71009029d33569dc925fc8
+
+COCOAPODS: 1.5.0
