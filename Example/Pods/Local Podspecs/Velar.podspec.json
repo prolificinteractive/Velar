@@ -1,6 +1,6 @@
 {
   "name": "Velar",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "summary": "A custom alert view presenter.",
   "description": "Velar can present a custom view with a swipeable dismiss gesture.",
   "homepage": "https://github.com/prolificinteractive/Velar",
@@ -13,11 +13,11 @@
   },
   "source": {
     "git": "https://github.com/prolificinteractive/Velar.git",
-    "tag": "0.1.1"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "9.0"
   },
   "swift_version": "4.1",
-  "source_files": "Velar/Classes/**/*"
+  "source_files": "Velar/Velar/Classes/**/*"
 }
