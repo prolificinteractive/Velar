@@ -1,3 +1,5 @@
+![Velar](Images/bg_velar.png)
+
 # Velar
 
 [![Travis build status](https://img.shields.io/travis/prolificinteractive/Velar.svg?style=flat-square)](https://travis-ci.org/prolificinteractive/Velar)
