@@ -1,7 +1,5 @@
 ![Velar](Images/bg_velar.png)
 
-# Velar
-
 [![Travis build status](https://img.shields.io/travis/prolificinteractive/Velar.svg?style=flat-square)](https://travis-ci.org/prolificinteractive/Velar)
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Velar.svg?style=flat-square)](https://img.shields.io/cocoapods/v/Velar.svg)
 [![Platform](https://img.shields.io/cocoapods/p/Velar.svg?style=flat-square)](http://cocoadocs.org/docsets/Velar)
