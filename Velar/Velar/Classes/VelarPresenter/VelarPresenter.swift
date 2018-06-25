@@ -13,6 +13,8 @@ public final class VelarPresenter {
     
     // MARK: - Public Properties
 
+    public var delegate: VelarPresenterDelegate?
+    
     /// Dismiss label threshold.
     public var dismissThreshold: CGFloat = 100 {
         didSet {
@@ -91,18 +93,24 @@ public final class VelarPresenter {
     ///   - view: Custom view to present.
     ///   - animate: Flag to animate the view.
     public func show(view: UIView, animate: Bool) {
+        delegate?.willPresent()
+        
         viewConstraintGenerator.constraint(subView: backgroundOverlayView, top: 0, leading: 0, bottom: 0, trailing: 0)
         viewConstraintGenerator.constraint(subView: baseView, top: 0, leading: 0, bottom: 0, trailing: 0)
 
         baseView.viewPresenter.present(view: view, animate: animate)
         
-        alphaAnimator.transitionAlpha(show: true, view: backgroundOverlayView, animated: animate, completion: nil)
+        alphaAnimator.transitionAlpha(show: true, view: backgroundOverlayView, animated: animate, completion: { [weak self] in ()
+            self?.delegate?.didPresent()
+        })
     }
     
     /// Hides the view.
     ///
     /// - Parameter animate: Flag to animate the view.
     public func hide(animate: Bool) {
+        delegate?.willDismiss()
+        
         alphaAnimator.transitionAlpha(show: false, view: backgroundOverlayView, animated: animate) { [weak self] in ()
             self?.backgroundOverlayView.showDismissLabel(show: false, animate: false)
             self?.backgroundOverlayView.removeFromSuperview()
@@ -111,6 +119,7 @@ public final class VelarPresenter {
         baseView.modalViewDismisser.dismiss(animate: animate, completion: { [weak self] in ()
             self?.baseView.viewPresenter.view?.removeFromSuperview()
             self?.baseView.removeFromSuperview()
+            self?.delegate?.didDismiss()
         })
     }
 
