@@ -18,7 +18,7 @@ Velar can present a custom view with a swipeable dismiss gesture.
 ## Installation
 
 ### CocoaPods
-Pilas is available through [CocoaPods](http://cocoapods.org). To install
+Velar is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -69,6 +69,30 @@ velarPresenter.show(view: imagePopOverView, animate: true)
 velarPresenter.hide(animate: true)
 ```
 
+### Presenter Delegate
+
+The `VelarPresenter` has a delegate that can be used to know when the presenter is going to present or dismiss. 
+
+```
+public protocol VelarPresenterDelegate {
+
+    /// Notifies delegate that velar presenter will present.
+    func willPresent()
+
+    /// Notifies delegate that velar presenter will dismiss.
+    func willDismiss()
+
+    /// Notifies delegate that velar presenter did present.
+    func didPresent()
+
+    /// Notifies delegate that velar presenter did dismiss.
+    func didDismiss()
+
+}
+```
+Simply set the delegate of the `VelarPresenter` to handle these updates.
+
+`velarPresenter.delegate = self`
 
 ## Contributing to Velar
 
@@ -82,6 +106,6 @@ If you wish to contribute to the project, fork this repo and submit a pull reque
 
 Copyright (c) 2017 Prolific Interactive
 
-Pilas is maintained and sponsored by Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
+Velar is maintained and sponsored by Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
 
 [LICENSE]: ./LICENSE

@@ -12,7 +12,9 @@ import Velar
 class ViewController: UIViewController {
 
     private lazy var velarPresenter: VelarPresenter = {
-        return VelarPresenterBuilder.build(designer: DefaultBackgroundOverlayDesigner())
+        let presenter = VelarPresenterBuilder.build(designer: DefaultBackgroundOverlayDesigner())
+        presenter.delegate = self
+        return presenter
     }()
 
     private lazy var imagePopOverView: ImagePopOverView = {
@@ -33,4 +35,24 @@ extension ViewController: ImagePopOverDelegate {
         velarPresenter.hide(animate: true)
     }
 
+}
+
+extension ViewController: VelarPresenterDelegate {
+
+    func willPresent() {
+        print("Will Present")
+    }
+
+    func willDismiss() {
+        print("Will Dismiss")
+    }
+
+    func didPresent() {
+        print("Did Present")
+    }
+
+    func didDismiss() {
+        print("Did Dismiss")
+    }
+    
 }
