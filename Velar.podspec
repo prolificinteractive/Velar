@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Velar'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'A custom alert view presenter.'
 
   s.description      = <<-DESC
