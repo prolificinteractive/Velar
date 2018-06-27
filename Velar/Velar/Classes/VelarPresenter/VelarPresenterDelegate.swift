@@ -6,7 +6,7 @@
 //  Copyright © 2018 Jonathan Samudio. All rights reserved.
 //
 
-public protocol VelarPresenterDelegate {
+@objc public protocol VelarPresenterDelegate: class {
     
     /// Notifies delegate that velar presenter will present.
     func willPresent()
@@ -19,17 +19,5 @@ public protocol VelarPresenterDelegate {
     
     /// Notifies delegate that velar presenter did dismiss.
     func didDismiss()
-    
-}
-
-extension VelarPresenterDelegate {
-    
-    func willPresent() { }
-    
-    func willDismiss() { }
-    
-    func didPresent() { }
-    
-    func didDismiss() { }
     
 }

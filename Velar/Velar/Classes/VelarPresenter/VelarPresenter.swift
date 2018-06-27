@@ -13,7 +13,7 @@ public final class VelarPresenter {
     
     // MARK: - Public Properties
 
-    public var delegate: VelarPresenterDelegate?
+    public weak var delegate: VelarPresenterDelegate?
     
     /// Dismiss label threshold.
     public var dismissThreshold: CGFloat = 100 {
