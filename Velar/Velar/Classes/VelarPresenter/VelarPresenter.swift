@@ -16,7 +16,7 @@ public final class VelarPresenter {
     public weak var delegate: VelarPresenterDelegate?
     
     /// Dismiss label threshold.
-    public var dismissThreshold: CGFloat = 50 {
+    public var dismissThreshold: CGFloat = 75 {
         didSet {
            baseView.dismissThreshold = dismissThreshold
         }
@@ -30,8 +30,8 @@ public final class VelarPresenter {
     }
 
     /// Animator for changing view alpha.
-    public var alphaAnimator: AlphaAnimatable = {
-        return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: 0.35)
+    public lazy var alphaAnimator: AlphaAnimatable = {
+        return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: transitionSpeed)
     }()
     
     /// The speed of the show and hide modal animation.
@@ -70,6 +70,7 @@ public final class VelarPresenter {
 
     private var parentWindow: UIWindow
     private var offset = CGPoint.zero
+    private var isAnimating = false
 
     // MARK: - Initialization
 
@@ -94,14 +95,20 @@ public final class VelarPresenter {
     ///   - view: Custom view to present.
     ///   - animate: Flag to animate the view.
     public func show(view: UIView, animate: Bool) {
-        delegate?.willPresent()
+        guard !isAnimating else {
+            return
+        }
         
+        delegate?.willPresent()
+        isAnimating = true
+
         viewConstraintGenerator.constraint(subView: backgroundOverlayView, top: 0, leading: 0, bottom: 0, trailing: 0)
         viewConstraintGenerator.constraint(subView: baseView, top: 0, leading: 0, bottom: 0, trailing: 0)
 
         baseView.viewPresenter.present(view: view, animate: animate)
-        
+
         alphaAnimator.transitionAlpha(show: true, view: backgroundOverlayView, animated: animate, completion: { [weak self] in ()
+            self?.isAnimating = false
             self?.delegate?.didPresent()
         })
     }
@@ -110,14 +117,20 @@ public final class VelarPresenter {
     ///
     /// - Parameter animate: Flag to animate the view.
     public func hide(animate: Bool, direction: Direction = .bottom) {
+        guard !isAnimating else {
+            return
+        }
+
         delegate?.willDismiss()
-        
+        isAnimating = true
+
         alphaAnimator.transitionAlpha(show: false, view: backgroundOverlayView, animated: animate) { [weak self] in ()
             self?.backgroundOverlayView.showDismissLabel(show: false, animate: false)
             self?.backgroundOverlayView.removeFromSuperview()
         }
-        
+
         baseView.modalViewDismisser.dismiss(animate: animate, direction: direction, completion: { [weak self] in ()
+            self?.isAnimating = false
             self?.baseView.viewPresenter.view?.removeFromSuperview()
             self?.baseView.removeFromSuperview()
             self?.delegate?.didDismiss()
