@@ -55,12 +55,10 @@ final class BaseView: UIView {
     
     /// Container view for the custom presentable view.
     private(set) var modalView = UIView()
+
+    weak var centerY: NSLayoutConstraint!
     
-    // MARK: - Private Properties
-    
-    private weak var centerY: NSLayoutConstraint!
-    
-    private weak var centerX: NSLayoutConstraint!
+    weak var centerX: NSLayoutConstraint!
 
     // MARK: - Initialization
 

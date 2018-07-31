@@ -31,13 +31,14 @@ public final class VelarPresenter {
 
     /// Animator for changing view alpha.
     public lazy var alphaAnimator: AlphaAnimatable = {
-        return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: transitionSpeed)
+        return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: VelarPresenter.defaultTransitionSpeed)
     }()
     
     /// The speed of the show and hide modal animation.
-    public var transitionSpeed: TimeInterval = 0.7 {
+    public var transitionSpeed: TimeInterval = defaultTransitionSpeed {
         didSet {
             baseView.transitionSpeed = transitionSpeed
+            alphaAnimator.duration = transitionSpeed
         }
     }
     
@@ -66,11 +67,13 @@ public final class VelarPresenter {
         return VerticalCenterMover(duration: 0.25)
     }()
 
+    var offset = CGPoint.zero
+
     // MARK: - Private Properties
 
     private var parentWindow: UIWindow
-    private var offset = CGPoint.zero
     private var isAnimating = false
+    private static let defaultTransitionSpeed = 0.7
 
     // MARK: - Initialization
 

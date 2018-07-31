@@ -9,6 +9,9 @@
 import UIKit
 
 public protocol AlphaAnimatable {
+
+    /// Duration of the animation.
+    var duration: TimeInterval { get set }
     
     /// Animates the given view.
     var viewAnimator: ViewAnimatable { get set }

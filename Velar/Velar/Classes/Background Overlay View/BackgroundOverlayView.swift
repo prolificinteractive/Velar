@@ -28,9 +28,7 @@ final class BackgroundOverlayView: UIView {
         return AlphaAnimator(showAlpha: 1, hideAlpha: 0, duration: 0.25)
     }()
 
-    // MARK: - Private Properties
-
-    private var dismissLabel = UILabel()
+    var dismissLabel = UILabel()
 
     // MARK: - Initialization
 
