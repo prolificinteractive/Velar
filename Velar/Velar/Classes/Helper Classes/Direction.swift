@@ -22,7 +22,7 @@ public enum Direction {
     func centerYOffset(viewHeight: CGFloat) -> CGFloat {
         switch self {
         case .top:
-            return 0
+            return -viewHeight
         case .bottom:
             return viewHeight
         }

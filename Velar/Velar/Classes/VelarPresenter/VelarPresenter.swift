@@ -169,7 +169,9 @@ extension VelarPresenter: PanGestureAdderDelegate {
                 return
             }
             
-            self.verticalCenterMover.returnToCenter(view: self.baseView.modalView, center: self.baseView.center, animate: true)
+            self.verticalCenterMover.returnToCenter(view: self.baseView.modalView,
+                                                    center: self.baseView.center,
+                                                    animate: true)
             self.backgroundOverlayView.showDismissLabel(show: self.baseView.modalViewDismisser.canDismiss, animate: true)
         })
     }
