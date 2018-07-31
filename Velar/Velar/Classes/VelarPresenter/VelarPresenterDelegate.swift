@@ -6,6 +6,8 @@
 //  Copyright © 2018 Jonathan Samudio. All rights reserved.
 //
 
+import  Foundation
+
 @objc public protocol VelarPresenterDelegate: class {
     
     /// Notifies delegate that velar presenter will present.

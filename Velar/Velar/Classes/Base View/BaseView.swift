@@ -13,7 +13,7 @@ final class BaseView: UIView {
     // MARK: - Public Properties
 
     /// Threshold to dismiss the view.
-    var dismissThreshold: CGFloat = 100
+    var dismissThreshold: CGFloat = 50
     
     /// Transition speed of presenting and hideing the modal.
     var transitionSpeed: TimeInterval = 0.7
