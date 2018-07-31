@@ -16,7 +16,7 @@ public final class VelarPresenter {
     public weak var delegate: VelarPresenterDelegate?
     
     /// Dismiss label threshold.
-    public var dismissThreshold: CGFloat = 75 {
+    public var dismissThreshold: CGFloat = 50 {
         didSet {
            baseView.dismissThreshold = dismissThreshold
         }
@@ -98,7 +98,7 @@ public final class VelarPresenter {
         guard !isAnimating else {
             return
         }
-        
+
         delegate?.willPresent()
         isAnimating = true
 
