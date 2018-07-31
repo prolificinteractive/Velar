@@ -10,6 +10,8 @@ import UIKit
 
 @testable import Velar
 class FakeAlphaAnimator: AlphaAnimatable {
+
+    var duration: TimeInterval = 0.7
     
     var viewAnimator: ViewAnimatable = FakeViewAnimator()
     
