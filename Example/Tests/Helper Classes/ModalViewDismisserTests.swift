@@ -40,7 +40,7 @@ class ModalViewDismisserTests: XCTestCase {
     
     func testDismiss() {
         
-        sut.dismiss(animate: true, completion: nil)
+        sut.dismiss(animate: true, direction: .bottom, completion: nil)
         
         XCTAssertTrue(fakeViewVerticalMover.moveWasCalled)
     }
@@ -48,7 +48,7 @@ class ModalViewDismisserTests: XCTestCase {
     func testCanDismiss_WithinThreshold() {
         modalView.center = CGPoint(x: 0, y: 50)
         
-        let actual = sut.canDismiss
+        let actual = sut.canDismissBottom
         
         XCTAssertFalse(actual)
     }

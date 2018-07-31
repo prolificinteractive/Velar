@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2054E1FD2110FA6400566AC7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054E1FC2110FA6300566AC7 /* Direction.swift */; };
 		20F4D00420AF1F9800064483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F4D00320AF1F9800064483 /* AppDelegate.swift */; };
 		20F4D00620AF1F9800064483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F4D00520AF1F9800064483 /* ViewController.swift */; };
 		20F4D00920AF1F9800064483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F4D00720AF1F9800064483 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		1B1443577DBEE935F12CB187 /* Pods-VelarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VelarUITests/Pods-VelarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2054E1FC2110FA6300566AC7 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		20F4D00020AF1F9800064483 /* Velar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Velar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F4D00320AF1F9800064483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F4D00520AF1F9800064483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		20F4D04020AF1FC300064483 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2054E1FC2110FA6300566AC7 /* Direction.swift */,
 				20F4D04120AF1FC300064483 /* ViewVerticalMover.swift */,
 				20F4D04220AF1FC300064483 /* ConstraintAnimator.swift */,
 				20F4D04320AF1FC300064483 /* ModalViewDismisser.swift */,
@@ -544,6 +547,7 @@
 				20F4D05E20AF1FC400064483 /* VelarPresenter.swift in Sources */,
 				20F4D06420AF1FC400064483 /* PanGestureAdder.swift in Sources */,
 				20F4D07520AF1FC400064483 /* ViewAnimatable.swift in Sources */,
+				2054E1FD2110FA6400566AC7 /* Direction.swift in Sources */,
 				20F4D05920AF1FC400064483 /* BaseView.swift in Sources */,
 				20F4D00620AF1F9800064483 /* ViewController.swift in Sources */,
 				20F4D06C20AF1FC400064483 /* PanGestureAdderDelegate.swift in Sources */,

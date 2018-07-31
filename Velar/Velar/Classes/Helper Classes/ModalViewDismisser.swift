@@ -12,8 +12,12 @@ final class ModalViewDismisser: Dismissable {
 
     // MARK: - Public Properties
 
-    var canDismiss: Bool {
+    var canDismissBottom: Bool {
         return  (modalView.center.y - (viewHeight / 2)) > dismissThreshold
+    }
+
+    var canDismissTop: Bool {
+        return (modalView.center.y - (viewHeight / 2)) < -dismissThreshold
     }
 
     var viewHeight: CGFloat
@@ -37,8 +41,10 @@ final class ModalViewDismisser: Dismissable {
 
     // MARK: - Public Functions
     
-    func dismiss(animate: Bool, completion: (()->())?) {
-        verticalMover.move(centerYOffset: viewHeight, animate: animate, completion: completion)
+    func dismiss(animate: Bool, direction: Direction, completion: (()->())?) {
+        verticalMover.move(centerYOffset: direction.centerYOffset(viewHeight: viewHeight),
+                           animate: animate,
+                           completion: completion)
     }
 
 }

@@ -16,13 +16,11 @@ final class AlphaAnimator: AlphaAnimatable {
         return ViewAnimator()
     }()
 
-    // MARK: - Private Properties
-
-    private var showAlpha: CGFloat
+    var showAlpha: CGFloat
     
-    private var hideAlpha: CGFloat
+    var hideAlpha: CGFloat
     
-    private var duration: TimeInterval
+    var duration: TimeInterval
 
     // MARK: - Initialization
 

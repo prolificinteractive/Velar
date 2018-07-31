@@ -25,7 +25,6 @@ final class ViewPresenter: Presentable {
     // MARK: - Initialization
 
     init(superView: UIView?, viewConstraintGenerator: ConstraintGenerator, verticalMover: VerticalMovable) {
-        
         self.viewConstraintGenerator = viewConstraintGenerator
         self.verticalMover = verticalMover
         self.superView = superView

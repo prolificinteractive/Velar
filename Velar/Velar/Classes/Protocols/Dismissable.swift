@@ -11,9 +11,39 @@ import UIKit
 
 protocol Dismissable {
     
-    var canDismiss: Bool { get }
+    /// Determines if the view can dismiss from the bottom.
+    var canDismissBottom: Bool { get }
 
+    /// Determines if the view can dismiss from the top.
+    var canDismissTop: Bool { get }
+
+    /// View height of the container view.
     var viewHeight: CGFloat { get set }
 
-    func dismiss(animate: Bool, completion: (()->())?)
+    /// Dismisses the view with the given parameters.
+    ///
+    /// - Parameters:
+    ///   - animate: Animates the transition.
+    ///   - direction: Direction of the animation.
+    ///   - completion: Optional completion block of the transition.
+    func dismiss(animate: Bool, direction: Direction, completion: (()->())?)
+
+}
+
+extension Dismissable {
+
+    /// Determines if the view can dismiss in either direction.
+    var canDismiss: Bool {
+        return canDismissBottom || canDismissTop
+    }
+
+    /// Current direction of the dismiss.
+    var direction: Direction {
+        if canDismissTop {
+            return .top
+        } else {
+            return .bottom
+        }
+    }
+    
 }

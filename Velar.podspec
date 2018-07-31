@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Velar'
-  s.version          = '0.1.7'
+  s.version          = '1.0.0'
   s.summary          = 'A custom alert view presenter.'
 
   s.description      = <<-DESC
@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/prolificinteractive/Velar.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.1'
 
   s.source_files = 'Velar/Velar/Classes/**/*'
   

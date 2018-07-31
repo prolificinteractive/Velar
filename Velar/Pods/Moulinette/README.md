@@ -43,7 +43,7 @@ How to build and run Moulinette on an Xcode project.
 Tool calling the moulinette to generate multiple audit. 
 
 ## Authors
-* Morgan Collino
+* Jonathan Samudio
 
 ## Requirements
 

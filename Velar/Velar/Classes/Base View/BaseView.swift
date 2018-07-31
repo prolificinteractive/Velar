@@ -13,7 +13,7 @@ final class BaseView: UIView {
     // MARK: - Public Properties
 
     /// Threshold to dismiss the view.
-    var dismissThreshold: CGFloat = 100
+    var dismissThreshold: CGFloat = 50
     
     /// Transition speed of presenting and hideing the modal.
     var transitionSpeed: TimeInterval = 0.7
@@ -55,12 +55,10 @@ final class BaseView: UIView {
     
     /// Container view for the custom presentable view.
     private(set) var modalView = UIView()
+
+    weak var centerY: NSLayoutConstraint!
     
-    // MARK: - Private Properties
-    
-    private weak var centerY: NSLayoutConstraint!
-    
-    private weak var centerX: NSLayoutConstraint!
+    weak var centerX: NSLayoutConstraint!
 
     // MARK: - Initialization
 
