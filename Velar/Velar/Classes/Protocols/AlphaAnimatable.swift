@@ -10,7 +10,16 @@ import UIKit
 
 public protocol AlphaAnimatable {
     
+    /// Animates the given view.
     var viewAnimator: ViewAnimatable { get set }
     
+    /// Transitions the view alpha with the properties provided.
+    ///
+    /// - Parameters:
+    ///   - show: Flag to transition the view to show or hide.
+    ///   - view: View to transition.
+    ///   - animated: Determines if the interaction should be animated.
+    ///   - completion: Optional completion block of the animation.
     func transitionAlpha(show: Bool, view: UIView, animated: Bool, completion: (()->())?)
+    
 }

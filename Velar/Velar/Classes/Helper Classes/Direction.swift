@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Direction of the dismiss animation.
 ///
