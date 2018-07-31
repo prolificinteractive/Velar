@@ -1,5 +1,5 @@
 PODS:
-  - Velar (0.1.6)
+  - Velar (0.1.7)
 
 DEPENDENCIES:
   - Velar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Velar: 28468e5611f014d8fa14efbcc44cca6b9a1102fb
+  Velar: 41369564754fe448325a235b8e58f4c3872a54dd
 
 PODFILE CHECKSUM: 58cad63f5c52e57b95dd155cb0f2db2f142e0b91
 
